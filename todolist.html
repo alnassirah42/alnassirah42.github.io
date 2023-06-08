@@ -126,7 +126,6 @@ input {
 </style>
 </head>
 <body>
-
 <div id="myDIV" class="header">
   <h2 style="margin:5px">Riyadh Restaurants List</h2>
   <input type="text" id="myInput" placeholder="Restaurants...">
@@ -137,7 +136,9 @@ input {
 </ul>
 
 <script>
+
 // Create a "close" button and append it to each list item
+var myUL = document.getElementById("myUL")
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -161,9 +162,10 @@ for (i = 0; i < close.length; i++) {
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
+    if (ev.target.tagName === 'LI') {
+        ev.target.classList.toggle('checked');
+    }
+    saveList();
 }, false);
 
 // Create a new list item when clicking on the "Add" button
@@ -178,7 +180,7 @@ function newElement() {
     document.getElementById("myUL").appendChild(li);
   }
   document.getElementById("myInput").value = "";
-
+  saveList()
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
@@ -192,6 +194,15 @@ function newElement() {
     }
   }
 }
+function saveList(){
+    localStorage.setItem("data",myUL.innerHTML)
+}
+
+function loadList(){
+    myUL.innerHTML = localStorage.getItem("data");
+}
+
+loadList()
 </script>
 
 </body>
