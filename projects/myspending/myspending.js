@@ -9,9 +9,13 @@ var category_colors;
 function makeplot() {
   Plotly.d3.csv("myspending.csv", 
       function(d){
-        return {
+          amount = Math.random()*400;
+          if (d['transaction type'] == 'salary'){
+            amount = -70*amount;
+          }
+          return {
             date: d.date,
-            amount: +d.amount,
+            amount: amount,//+d.amount,
             card: d.card,
             description: d.Description,
             YM : d.YM,
