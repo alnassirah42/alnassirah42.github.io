@@ -1,4 +1,7 @@
 var dft,yms;
+var YM; 
+var category = 'all';
+var category_colors;
 
 function makeplot() {
   Plotly.d3.csv("myspending.csv", 
@@ -11,7 +14,7 @@ function makeplot() {
             YM : d.YM,
             category: d.category,
             category_n: d.category_n,
-            cumulative_sum: +d.cumulative_sum,
+            // cumulative_sum: +d.cumulative_sum,
             transaction_type: d['transaction type'],
         }
       },  
@@ -19,16 +22,37 @@ function makeplot() {
           dft = data;
           yms = [... new Set(dft.map(d=>d.YM))]
           yms = d3.sort(yms,(a,b)=>d3.ascending(a,b))
-          makeButtons(yms)
-          processData(yms[yms.length-2]) } );
+          YM = yms[yms.length -2]
+          yms.push('all')
+          makeYMButtons(yms)
+
+          cats = [... new Set(dft.map(d=>d.category_n))]
+          cats = d3.sort(cats,(a,b)=>d3.ascending(a,b))
+          cats.push('all')
+          category_colors = d3.scaleOrdinal(d3.schemeSet3)
+          category_colors.domain(cats)
+
+          makeCatButtons(cats)
+          category = 'all'
+          processData(YM,category) } );
 
 };
   
-function processData(YM) {
+function processData(YM,category) {
     // dft = data
+    df_month_wsal = dft 
+    if (YM !='all'){
         df_month_wsal = d3.filter(dft,d=>d.YM == YM)  
+    }
     df_month = d3.filter(df_month_wsal,d=>d["transaction_type"] != 'salary')  
-    df2 = df_month;
+    if (category !='all'){
+        df_month = d3.filter(df_month,d=>d["category_n"] == category)  
+    }
+    cumsum = 0;
+    for(i=0;i<df_month.length;i++){
+        cumsum += df_month[i]['amount']
+        df_month[i]['cumulative_sum'] = cumsum
+    }
     df = d3.rollup(df_month,v=>d3.sum(v,d=>d.amount),d=>d.date)
     df = [...df].map(function(d){return {date:d[0],amount:d[1]}})
     layout = {margin: {
@@ -54,21 +78,20 @@ function processData(YM) {
     
     // pie chart 
     f = v=>d3.sum(v,d=>d[value])
-    df_pie = prepareData(df2,key='category_n',value='amount',f)
+    df_pie = prepareData(df_month,key='category_n',value='amount',f)
     var pie_data = [{
         values : df_pie.map(d=>d['amount']),
         labels : df_pie.map(d=>d['category_n']),
         marker :{
-            colors: df_pie.map(d=>d.color),
+            colors: df_pie.map(d=>category_colors(d['category_n'])),
         },
-
         type   : 'pie'
     }]
     Plotly.newPlot('pieChart',pie_data,layout)
 
     // bar chart
     f = v=>d3.sum(v,d=>d[value])
-    df_bar = prepareData(df2,key='transaction_type',value='amount',f)
+    df_bar = prepareData(df_month,key='transaction_type',value='amount',f)
     df_bar = d3.sort(df_bar,(aa,bb)=>d3.descending(aa['amount'],bb['amount']))
         
     makeBar(df_bar);
@@ -337,14 +360,12 @@ function sankeyChart(df){
     Plotly.react('sankeyChart', data, layout)
 }
 
+const buttons = d3.select("#Year-month")
+
+const categories = d3.select("#categories")
 
 
-const buttons = d3.select("#buttons")
-        .attr("id","buttons")
-
-makeplot();
-
-function makeButtons(yms) {
+function makeYMButtons(yms) {
     buttons
         .selectAll('input')
         .data(yms)
@@ -357,7 +378,29 @@ function makeButtons(yms) {
         .text(d=>d)
         .on('click',changeYM)
 }
+function makeCatButtons(cats) {
+    categories
+        .selectAll('input')
+        .data(cats)
+        .enter()
+        .append('input')
+        .attr('id','select-category')
+        .attr('class','button')
+        .style('background-color',d=>category_colors(d))
+        .attr('type','button')
+        .attr('value',d=>d)
+        .text(d=>d)
+        .on('click',selectCategory)
+}
+
 function changeYM(){
     YM = this.value
-    processData(YM)
+    processData(YM,category)
 }
+function selectCategory(){
+    category = this.value
+    processData(YM,category)
+}
+
+
+makeplot();
