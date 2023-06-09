@@ -109,7 +109,7 @@ function plotLine(x, y, id,layout,YM){
     }];
 
     Plotly.newPlot(id, traces, 
-        {title: 'spending over the month ' + YM},layout);
+        {title: 'spending over'+ YM},layout);
 
 };
 function prepareData(df,key,value,f){
