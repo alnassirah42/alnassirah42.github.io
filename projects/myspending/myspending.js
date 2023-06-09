@@ -1,6 +1,9 @@
 var dft,yms;
 var YM; 
 var category = 'all';
+var credit = 'all';
+const credit_d = {'credit':-1,
+                  'debit': 1}
 var category_colors;
 
 function makeplot() {
@@ -20,6 +23,7 @@ function makeplot() {
       },  
       function(data){ 
           dft = data;
+          makeCreditDebitButtons()
           yms = [... new Set(dft.map(d=>d.YM))]
           yms = d3.sort(yms,(a,b)=>d3.ascending(a,b))
           YM = yms[yms.length -2]
@@ -34,20 +38,25 @@ function makeplot() {
 
           makeCatButtons(cats)
           category = 'all'
-          processData(YM,category) } );
+          processData(YM,category,credit) } );
 
 };
   
-function processData(YM,category) {
+function processData(YM,category,credit) {
     // dft = data
     df_month_wsal = dft 
     if (YM !='all'){
         df_month_wsal = d3.filter(dft,d=>d.YM == YM)  
     }
-    df_month = d3.filter(df_month_wsal,d=>d["transaction_type"] != 'salary')  
+    df_month = df_month_wsal//d3.filter(df_month_wsal,d=>d["transaction_type"] != 'salary')  
     if (category !='all'){
         df_month = d3.filter(df_month,d=>d["category_n"] == category)  
     }
+
+    if (credit !='all'){
+        df_month = d3.filter(df_month,d=>credit_d[credit]*d.amount > 0)  
+    }
+
     cumsum = 0;
     for(i=0;i<df_month.length;i++){
         cumsum += df_month[i]['amount']
@@ -264,9 +273,6 @@ function sankeyChart(df){
                       value='amount',
                       v=>d3.sum(v,d=>d.amount))
 
-    cat_color = d3.scaleOrdinal(d3.schemeSet3)
-    cat_color.domain(dfg.map(d=>d[key]))
-
     incoming = d3.filter(df,d=>d.amount<0)
     incoming = prepareData(incoming,
                            key='category_n',value='amount',
@@ -290,7 +296,7 @@ function sankeyChart(df){
         targets.push(total_index)
         labels.push(c['category_n'])
         values.push(c['amount'])
-        colors.push(cat_color(c['category_n']))
+        colors.push(category_colors(c['category_n']))
     }
     // total 
     labels.push('total')
@@ -303,7 +309,7 @@ function sankeyChart(df){
         targets.push(i+total_index+1)
         labels.push(c['category_n'])
         values.push(c['amount'])
-        colors.push(cat_color(c['category_n']))
+        colors.push(category_colors(c['category_n']))
     }
 
     saved = d3.sum(incoming,d=>d.amount) - d3.sum(spending,d=>d.amount)
@@ -360,14 +366,15 @@ function sankeyChart(df){
     Plotly.react('sankeyChart', data, layout)
 }
 
-const buttons = d3.select("#Year-month")
+const buttons = d3.select("#year-month")
 
 const categories = d3.select("#categories")
+const credit_debit = d3.select("#year-month")
 
 
 function makeYMButtons(yms) {
     buttons
-        .selectAll('input')
+        .selectAll('input#ym')
         .data(yms)
         .enter()
         .append('input')
@@ -393,14 +400,33 @@ function makeCatButtons(cats) {
         .on('click',selectCategory)
 }
 
+function makeCreditDebitButtons(){
+    credit_debit
+        .selectAll('input#credit-debit')
+        .data(['credit','debit','all'])
+        .enter()
+        .append('input')
+        .attr('id','credit_debit')
+        .attr('class','button')
+        .attr('type','button')
+        .attr('value',d=>d)
+        .text(d=>d)
+        .on('click',selectCreditDebit)
+
+}
 function changeYM(){
     YM = this.value
-    processData(YM,category)
-}
-function selectCategory(){
-    category = this.value
-    processData(YM,category)
+    processData(YM,category,credit)
 }
 
+function selectCategory(){
+    category = this.value
+    processData(YM,category,credit)
+}
+
+function selectCreditDebit(){
+    credit = this.value
+    processData(YM,category,credit)
+}
 
 makeplot();
