@@ -4,7 +4,11 @@ var category = 'all';
 var credit = 'all';
 const credit_d = {'credit':-1,
                   'debit': 1}
+
 var category_colors;
+var sort = 'chronological'
+var sort_d = {'chronological':'date',
+              'descending': 'amount'}
 
 function makeplot() {
   Plotly.d3.csv("myspending.csv", 
@@ -30,9 +34,11 @@ function makeplot() {
           makeCreditDebitButtons()
           yms = [... new Set(dft.map(d=>d.YM))]
           yms = d3.sort(yms,(a,b)=>d3.ascending(a,b))
-          YM = yms[yms.length -2]
+          YM = yms[yms.length -1]
           yms.push('all')
           makeYMButtons(yms)
+
+          makeSortDropDown()
 
           cats = [... new Set(dft.map(d=>d.category_n))]
           cats = d3.sort(cats,(a,b)=>d3.ascending(a,b))
@@ -42,11 +48,11 @@ function makeplot() {
 
           makeCatButtons(cats)
           category = 'all'
-          processData(YM,category,credit) } );
+          processData(YM,category,credit,sort) } );
 
 };
   
-function processData(YM,category,credit) {
+function processData(YM,category,credit,sort) {
     // dft = data
     df_month_wsal = dft 
     if (YM !='all'){
@@ -108,7 +114,7 @@ function processData(YM,category,credit) {
     df_bar = d3.sort(df_bar,(aa,bb)=>d3.descending(aa['amount'],bb['amount']))
         
     makeBar(df_bar);
-    makeTable(df_month);
+    makeTable(df_month,sort);
     makeSummary(df_month);
     sankeyChart(df_month_wsal)
 }
@@ -138,7 +144,13 @@ function prepareData(df,key,value,f){
     })
     return dfg
 }
-function makeTable(df){
+function makeTable(df,sort){
+    
+    if (sort == 'chronological'){
+    df = d3.sort(df,(a,b)=>d3.ascending(a[sort_d[sort]],b[sort_d[sort]]))
+    }else{
+    df = d3.sort(df,(a,b)=>d3.descending(a[sort_d[sort]],b[sort_d[sort]]))
+    }
     var values = [
         df.map(d=>d['date']),
         df.map(d=>d['description']),
@@ -374,6 +386,7 @@ const buttons = d3.select("#year-month")
 
 const categories = d3.select("#categories")
 const credit_debit = d3.select("#year-month")
+const sorts = d3.select("#year-month")
 
 
 function makeYMButtons(yms) {
@@ -420,17 +433,38 @@ function makeCreditDebitButtons(){
 }
 function changeYM(){
     YM = this.value
-    processData(YM,category,credit)
+    processData(YM,category,credit,sort)
 }
 
 function selectCategory(){
     category = this.value
-    processData(YM,category,credit)
+    processData(YM,category,credit,sort)
 }
 
 function selectCreditDebit(){
     credit = this.value
-    processData(YM,category,credit)
+    processData(YM,category,credit,sort)
+}
+function selectSort(){
+    sort = this.value
+    processData(YM,category,credit,sort)
+}
+
+function makeSortDropDown(){
+    sorts.append('select')
+        .attr('class','sort')
+        .selectAll(".sort")
+        .data(['chronological','descending'])
+        .enter()
+        .append('option')
+        .attr('id','sort')
+        .attr('class','sort')
+        .attr('value',d=>d)
+        .text(d=>d)
+
+        d3.select(".sort")
+          .on('change',selectSort)
+
 }
 
 makeplot();

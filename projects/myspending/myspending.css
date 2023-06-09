@@ -5,12 +5,16 @@
     display: grid;
     gap: 10px;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-rows: 0.8fr 1fr 1fr 1fr ;
     }
 
 .grid-container > div {
   font-size: 30px;
   border: solid 1px black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 2px;
+  background-color: #CCCCCC;
 }
 #year-month{
     grid-column-start: 1; 
@@ -20,7 +24,7 @@
     /* grid-column-start: 1; */
     /* grid-column-end: 3; */
 }
-.button {
+.button, select {
       display: inline-block;
       padding: 10px 20px;
       margin : 2px;
