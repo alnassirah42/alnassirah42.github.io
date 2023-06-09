@@ -26,20 +26,20 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 171.68,6572 [stcpay],jahez riyadh sa,2021-01-01 00:00:00,stcpay transaction,2021-01-01,2021-01,01 restaurant,restaurant,622.75
 109.87,6572 [stcpay],hungerstation internet sa,2021-01-01 00:00:00,stcpay transaction,2021-01-01,2021-01,04 petrol,petrol,732.6200000000001
 221.9,6572 [stcpay],jahez riyadh sa,2021-01-01 00:00:00,stcpay transaction,2021-01-01,2021-01,01 restaurant,restaurant,954.5200000000001
-94.58,6572 [stcpay],sender name: hassan aljishi,2021-03-20 00:00:00,stcpay credit,2021-03-20,2021-03,06 stcpay,stcpay,94.58
-158.01,6572 [stcpay],sender name: عادل عبدالحبيب,2021-03-23 00:00:00,stcpay credit,2021-03-23,2021-03,06 stcpay,stcpay,252.58999999999997
-197.61,6572 [stcpay],sender name: hassan alahmed,2021-03-23 00:00:00,stcpay credit,2021-03-23,2021-03,06 stcpay,stcpay,450.2
-132.17,6572 [stcpay],sender name: abdulrahman alfawzan,2021-03-23 00:00:00,stcpay credit,2021-03-23,2021-03,06 stcpay,stcpay,582.37
-237.31,6572 [stcpay],sender name: hassan alahmed,2021-03-29 00:00:00,stcpay credit,2021-03-29,2021-03,06 stcpay,stcpay,819.68
-253.97,6572 [stcpay],sender name: majed al hulayel,2021-04-03 00:00:00,stcpay credit,2021-04-03,2021-04,06 stcpay,stcpay,253.97
-161.24,6572 [stcpay],sender name: وليد العكر,2021-06-10 00:00:00,stcpay credit,2021-06-10,2021-06,06 stcpay,stcpay,161.24
-252.66,6572 [stcpay],sender name: abdullah basulaib,2021-06-10 00:00:00,stcpay credit,2021-06-10,2021-06,06 stcpay,stcpay,413.9
-60.21,6572 [stcpay],sender name: عادل عبدالحبيب,2021-06-10 00:00:00,stcpay credit,2021-06-10,2021-06,06 stcpay,stcpay,474.11
-204.15,6572 [stcpay],sender name: majed al hulayel,2021-06-10 00:00:00,stcpay credit,2021-06-10,2021-06,06 stcpay,stcpay,678.26
-161.61,6572 [stcpay],sender name: abdullah basulaib,2021-06-14 00:00:00,stcpay credit,2021-06-14,2021-06,06 stcpay,stcpay,839.87
+94.58,6572 [stcpay],redacted!,2021-03-20 00:00:00,stcpay credit,2021-03-20,2021-03,06 stcpay,stcpay,94.58
+158.01,6572 [stcpay],redacted!,2021-03-23 00:00:00,stcpay credit,2021-03-23,2021-03,06 stcpay,stcpay,252.58999999999997
+197.61,6572 [stcpay],redacted!,2021-03-23 00:00:00,stcpay credit,2021-03-23,2021-03,06 stcpay,stcpay,450.2
+132.17,6572 [stcpay],redacted!,2021-03-23 00:00:00,stcpay credit,2021-03-23,2021-03,06 stcpay,stcpay,582.37
+237.31,6572 [stcpay],redacted!,2021-03-29 00:00:00,stcpay credit,2021-03-29,2021-03,06 stcpay,stcpay,819.68
+253.97,6572 [stcpay],redacted!,2021-04-03 00:00:00,stcpay credit,2021-04-03,2021-04,06 stcpay,stcpay,253.97
+161.24,6572 [stcpay],redacted!,2021-06-10 00:00:00,stcpay credit,2021-06-10,2021-06,06 stcpay,stcpay,161.24
+252.66,6572 [stcpay],redacted!,2021-06-10 00:00:00,stcpay credit,2021-06-10,2021-06,06 stcpay,stcpay,413.9
+60.21,6572 [stcpay],redacted!,2021-06-10 00:00:00,stcpay credit,2021-06-10,2021-06,06 stcpay,stcpay,474.11
+204.15,6572 [stcpay],redacted!,2021-06-10 00:00:00,stcpay credit,2021-06-10,2021-06,06 stcpay,stcpay,678.26
+161.61,6572 [stcpay],redacted!,2021-06-14 00:00:00,stcpay credit,2021-06-14,2021-06,06 stcpay,stcpay,839.87
 -616.8,6572 [stcpay],salary,2021-06-15 00:00:00,salary,2021-06-15,2021-06,06 stcpay,stcpay,223.07000000000005
 266.07,6450,salary,2021-06-23 10:25:00,card transaction,2021-06-23,2021-06,11 other,other,489.14000000000004
-37.65,6572 [stcpay],sender name: mohammed almulhim,2021-06-23 00:00:00,stcpay credit,2021-06-23,2021-06,06 stcpay,stcpay,526.7900000000001
+37.65,6572 [stcpay],redacted!,2021-06-23 00:00:00,stcpay credit,2021-06-23,2021-06,06 stcpay,stcpay,526.7900000000001
 90.91,0228,wafi energy com,2021-06-24 09:19:00,mada transaction,2021-06-24,2021-06,11 other,other,617.7
 257.35,6450,thmarat altghthiya for,2021-06-24 13:35:00,card transaction,2021-06-24,2021-06,03 market,market,875.0500000000001
 213.99,6450,amna alhajji enterainm,2021-06-25 19:54:00,card transaction,2021-06-25,2021-06,11 other,other,1089.04
@@ -74,8 +74,8 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 131.84,0228,stc pay,2021-07-04 13:41:00,mada transaction,2021-07-04,2021-07,06 stcpay,stcpay,1955.77
 57.04,6450,muasasat masarat alsih,2021-07-04 20:56:00,card transaction,2021-07-04,2021-07,11 other,other,2012.81
 131.16,6450,thoug gout est,2021-07-04 21:24:00,card transaction,2021-07-04,2021-07,11 other,other,2143.97
-90.18,6572 [stcpay],sender name: mohammed bajuaifer,2021-07-04 00:00:00,stcpay credit,2021-07-04,2021-07,06 stcpay,stcpay,2234.15
-188.08,6572 [stcpay],sender name: adam hammam,2021-07-04 00:00:00,stcpay credit,2021-07-04,2021-07,06 stcpay,stcpay,2422.23
+90.18,6572 [stcpay],redacted!,2021-07-04 00:00:00,stcpay credit,2021-07-04,2021-07,06 stcpay,stcpay,2234.15
+188.08,6572 [stcpay],redacted!,2021-07-04 00:00:00,stcpay credit,2021-07-04,2021-07,06 stcpay,stcpay,2422.23
 162.84,6450,abdulaah awad alsayari,2021-07-05 09:25:00,card transaction,2021-07-05,2021-07,11 other,other,2585.07
 117.15,6450,لدى  netflix.com,2021-07-05 08:30:00,internet purchase,2021-07-05,2021-07,10 bills,bills,2702.22
 150.16,6450,food lines to service,2021-07-05 19:28:00,card transaction,2021-07-05,2021-07,01 restaurant,restaurant,2852.38
@@ -89,7 +89,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 36.88,6450,center for car mainten,2021-07-07 18:11:00,card transaction,2021-07-07,2021-07,11 other,other,4006.42
 177.41,6450,maqsood resturant,2021-07-07 19:59:00,card transaction,2021-07-07,2021-07,01 restaurant,restaurant,4183.83
 240.83,6450,tamweenat alshabakah a,2021-07-07 20:48:00,card transaction,2021-07-07,2021-07,03 market,market,4424.66
-31.75,6572 [stcpay],sender name: ahmed alismail,2021-07-07 00:00:00,stcpay credit,2021-07-07,2021-07,06 stcpay,stcpay,4456.41
+31.75,6572 [stcpay],redacted!,2021-07-07 00:00:00,stcpay credit,2021-07-07,2021-07,06 stcpay,stcpay,4456.41
 262.63,6450,tamweenat alshabakah a,2021-07-08 23:37:00,card transaction,2021-07-08,2021-07,03 market,market,4719.04
 247.8,6450,mazaj almasa,2021-07-08 23:11:00,card transaction,2021-07-08,2021-07,11 other,other,4966.84
 253.28,0228,wafi energy com,2021-07-08 09:20:00,mada transaction,2021-07-08,2021-07,11 other,other,5220.12
@@ -102,47 +102,47 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 182.57,0228,fahad mohammed,2021-07-10 19:26:00,mada transaction,2021-07-10,2021-07,11 other,other,6333.07
 246.48,6450,abdullah al omran,2021-07-10 19:21:00,card transaction,2021-07-10,2021-07,11 other,other,6579.55
 165.05,6450,library tradition,2021-07-10 18:11:00,card transaction,2021-07-10,2021-07,11 other,other,6744.6
-80.73,6572 [stcpay],sender name: sarah alsaif,2021-07-11 00:00:00,stcpay credit,2021-07-11,2021-07,06 stcpay,stcpay,6825.33
-231.04,6572 [stcpay],sender name: adam hammam,2021-07-11 00:00:00,stcpay credit,2021-07-11,2021-07,06 stcpay,stcpay,7056.37
+80.73,6572 [stcpay],redacted!,2021-07-11 00:00:00,stcpay credit,2021-07-11,2021-07,06 stcpay,stcpay,6825.33
+231.04,6572 [stcpay],redacted!,2021-07-11 00:00:00,stcpay credit,2021-07-11,2021-07,06 stcpay,stcpay,7056.37
 285.88,6450,tamweenat alshabakah a,2021-07-11 21:42:00,card transaction,2021-07-11,2021-07,03 market,market,7342.25
 -1258.1999999999998,0228,salary,2021-07-11 21:32:00,salary,2021-07-11,2021-07,01 restaurant,restaurant,6084.05
 43.99,6450,spar store co,2021-07-11 21:27:00,card transaction,2021-07-11,2021-07,11 other,other,6128.04
 141.82,6450,abdulaah awad alsayari,2021-07-11 09:29:00,card transaction,2021-07-11,2021-07,11 other,other,6269.860000000001
 154.12,6450,spar store co,2021-07-11 21:14:00,card transaction,2021-07-11,2021-07,11 other,other,6423.9800000000005
-294.17,6572 [stcpay],sender name: naif alrugaib,2021-07-11 00:00:00,stcpay credit,2021-07-11,2021-07,06 stcpay,stcpay,6718.150000000001
-255.16,6572 [stcpay],sender name: abdulrahman alfawzan,2021-07-11 00:00:00,stcpay credit,2021-07-11,2021-07,06 stcpay,stcpay,6973.31
+294.17,6572 [stcpay],redacted!,2021-07-11 00:00:00,stcpay credit,2021-07-11,2021-07,06 stcpay,stcpay,6718.150000000001
+255.16,6572 [stcpay],redacted!,2021-07-11 00:00:00,stcpay credit,2021-07-11,2021-07,06 stcpay,stcpay,6973.31
 197.25,6450,afaq food for food tra,2021-07-11 21:17:00,card transaction,2021-07-11,2021-07,01 restaurant,restaurant,7170.56
-63.27,6572 [stcpay],sender name: rahmah akhtar,2021-07-12 00:00:00,stcpay credit,2021-07-12,2021-07,06 stcpay,stcpay,7233.83
-182.64,6572 [stcpay],sender name: fahad alharthi,2021-07-12 00:00:00,stcpay credit,2021-07-12,2021-07,06 stcpay,stcpay,7416.47
-135.5,6572 [stcpay],sender name: naif alrugaib,2021-07-12 00:00:00,stcpay credit,2021-07-12,2021-07,06 stcpay,stcpay,7551.97
-199.19,6572 [stcpay],sender name: adam hammam,2021-07-12 00:00:00,stcpay credit,2021-07-12,2021-07,06 stcpay,stcpay,7751.16
-297.31,6572 [stcpay],sender name: عبدالعزيز الزيدان,2021-07-12 00:00:00,stcpay credit,2021-07-12,2021-07,06 stcpay,stcpay,8048.47
+63.27,6572 [stcpay],redacted!,2021-07-12 00:00:00,stcpay credit,2021-07-12,2021-07,06 stcpay,stcpay,7233.83
+182.64,6572 [stcpay],redacted!,2021-07-12 00:00:00,stcpay credit,2021-07-12,2021-07,06 stcpay,stcpay,7416.47
+135.5,6572 [stcpay],redacted!,2021-07-12 00:00:00,stcpay credit,2021-07-12,2021-07,06 stcpay,stcpay,7551.97
+199.19,6572 [stcpay],redacted!,2021-07-12 00:00:00,stcpay credit,2021-07-12,2021-07,06 stcpay,stcpay,7751.16
+297.31,6572 [stcpay],redacted!,2021-07-12 00:00:00,stcpay credit,2021-07-12,2021-07,06 stcpay,stcpay,8048.47
 278.54,6450,home world est,2021-07-12 18:47:00,card transaction,2021-07-12,2021-07,11 other,other,8327.01
 178.19,6450,muasasat masarat alsih,2021-07-12 21:11:00,card transaction,2021-07-12,2021-07,11 other,other,8505.2
 52.11,6450,mz ltd co,2021-07-12 21:14:00,card transaction,2021-07-12,2021-07,11 other,other,8557.31
 143.89,0228,fahad mohammed,2021-07-12 21:35:00,mada transaction,2021-07-12,2021-07,11 other,other,8701.2
 66.61,6450,sushi art-exit 5,2021-07-13 20:53:00,card transaction,2021-07-13,2021-07,01 restaurant,restaurant,8767.81
-221.26,6572 [stcpay],sender name: abdullah basulaib,2021-07-13 00:00:00,stcpay credit,2021-07-13,2021-07,06 stcpay,stcpay,8989.07
+221.26,6572 [stcpay],redacted!,2021-07-13 00:00:00,stcpay credit,2021-07-13,2021-07,06 stcpay,stcpay,8989.07
 285.48,6450,tamweenat alshabakah a,2021-07-13 21:11:00,card transaction,2021-07-13,2021-07,03 market,market,9274.550000000001
-200.52,6572 [stcpay],sender name: fahad alharthi,2021-07-13 00:00:00,stcpay credit,2021-07-13,2021-07,06 stcpay,stcpay,9475.07
-161.72,6572 [stcpay],sender name: abdulrahman alhashim,2021-07-13 00:00:00,stcpay credit,2021-07-13,2021-07,06 stcpay,stcpay,9636.79
+200.52,6572 [stcpay],redacted!,2021-07-13 00:00:00,stcpay credit,2021-07-13,2021-07,06 stcpay,stcpay,9475.07
+161.72,6572 [stcpay],redacted!,2021-07-13 00:00:00,stcpay credit,2021-07-13,2021-07,06 stcpay,stcpay,9636.79
 181.34,6450,alhatab bakery,2021-07-13 09:22:00,card transaction,2021-07-13,2021-07,01 restaurant,restaurant,9818.130000000001
 236.49,0228,abdulaah awad a,2021-07-14 21:27:00,mada transaction,2021-07-14,2021-07,11 other,other,10054.62
-189.83,6572 [stcpay],sender name: fahad alharthi,2021-07-14 00:00:00,stcpay credit,2021-07-14,2021-07,06 stcpay,stcpay,10244.45
-56.08,6572 [stcpay],sender name: reem al subaie,2021-07-14 00:00:00,stcpay credit,2021-07-14,2021-07,06 stcpay,stcpay,10300.53
+189.83,6572 [stcpay],redacted!,2021-07-14 00:00:00,stcpay credit,2021-07-14,2021-07,06 stcpay,stcpay,10244.45
+56.08,6572 [stcpay],redacted!,2021-07-14 00:00:00,stcpay credit,2021-07-14,2021-07,06 stcpay,stcpay,10300.53
 184.67,6450,alhatab bakery,2021-07-14 09:14:00,card transaction,2021-07-14,2021-07,01 restaurant,restaurant,10485.2
-263.57,6572 [stcpay],sender name: rahmah akhtar,2021-07-14 00:00:00,stcpay credit,2021-07-14,2021-07,06 stcpay,stcpay,10748.77
+263.57,6572 [stcpay],redacted!,2021-07-14 00:00:00,stcpay credit,2021-07-14,2021-07,06 stcpay,stcpay,10748.77
 269.23,6450,salary,2021-07-15 09:30:00,card transaction,2021-07-15,2021-07,03 market,market,11018.0
-110.23,6572 [stcpay],sender name: abdullah basulaib,2021-07-15 00:00:00,stcpay credit,2021-07-15,2021-07,06 stcpay,stcpay,11128.23
+110.23,6572 [stcpay],redacted!,2021-07-15 00:00:00,stcpay credit,2021-07-15,2021-07,06 stcpay,stcpay,11128.23
 106.87,0228,fahad mohammed,2021-07-15 20:14:00,mada transaction,2021-07-15,2021-07,11 other,other,11235.1
 249.49,6450,wadi al nakhel g,2021-07-18 19:44:00,card transaction,2021-07-18,2021-07,11 other,other,11484.59
 259.9,0228,alkarib alfaran,2021-07-23 22:49:00,mada transaction,2021-07-23,2021-07,11 other,other,11744.49
 42.69,0228,salary,2021-07-24 17:36:00,mada transaction,2021-07-24,2021-07,04 petrol,petrol,11787.18
-135.97,6572 [stcpay],sender name: adam hammam,2021-07-25 00:00:00,stcpay credit,2021-07-25,2021-07,06 stcpay,stcpay,11923.15
-51.68,6572 [stcpay],sender name: abdullah basulaib,2021-07-25 00:00:00,stcpay credit,2021-07-25,2021-07,06 stcpay,stcpay,11974.83
+135.97,6572 [stcpay],redacted!,2021-07-25 00:00:00,stcpay credit,2021-07-25,2021-07,06 stcpay,stcpay,11923.15
+51.68,6572 [stcpay],redacted!,2021-07-25 00:00:00,stcpay credit,2021-07-25,2021-07,06 stcpay,stcpay,11974.83
 189.67,6450,afaq food for food tra,2021-07-25 20:46:00,card transaction,2021-07-25,2021-07,01 restaurant,restaurant,12164.5
 294.51,6450,tamweenat alshabakah a,2021-07-25 08:08:00,card transaction,2021-07-25,2021-07,03 market,market,12459.01
-143.99,6572 [stcpay],sender name: sarah alsaif,2021-07-25 00:00:00,stcpay credit,2021-07-25,2021-07,06 stcpay,stcpay,12603.0
+143.99,6572 [stcpay],redacted!,2021-07-25 00:00:00,stcpay credit,2021-07-25,2021-07,06 stcpay,stcpay,12603.0
 184.94,6450,abdulaah awad alsayari,2021-07-26 07:56:00,card transaction,2021-07-26,2021-07,11 other,other,12787.94
 224.26,6450,لدى  mobily,2021-07-26 09:07:00,internet purchase,2021-07-26,2021-07,11 other,other,13012.2
 281.53,6450,salary,2021-07-26 15:54:00,card transaction,2021-07-26,2021-07,11 other,other,13293.73
@@ -162,41 +162,41 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 185.83,6450,alriyadh alwaed est,2021-08-01 19:08:00,card transaction,2021-08-01,2021-08,11 other,other,185.83
 141.97,6450,tamweenat alshabakah a,2021-08-01 08:53:00,card transaction,2021-08-01,2021-08,03 market,market,327.8
 52.45,6450,tamweenat alshabakah a,2021-08-02 09:15:00,card transaction,2021-08-02,2021-08,03 market,market,380.25
-279.04,6572 [stcpay],sender name: fahad alharthi,2021-08-02 00:00:00,stcpay credit,2021-08-02,2021-08,06 stcpay,stcpay,659.29
-136.87,6572 [stcpay],sender name: abdullah basulaib,2021-08-02 00:00:00,stcpay credit,2021-08-02,2021-08,06 stcpay,stcpay,796.1600000000001
+279.04,6572 [stcpay],redacted!,2021-08-02 00:00:00,stcpay credit,2021-08-02,2021-08,06 stcpay,stcpay,659.29
+136.87,6572 [stcpay],redacted!,2021-08-02 00:00:00,stcpay credit,2021-08-02,2021-08,06 stcpay,stcpay,796.1600000000001
 241.84,6450,camel step co,2021-08-02 20:39:00,card transaction,2021-08-02,2021-08,11 other,other,1038.0
 73.09,0228,wafi energy com,2021-08-03 09:49:00,mada transaction,2021-08-03,2021-08,11 other,other,1111.0900000000001
 238.03,6450,alhatab bakery,2021-08-03 09:56:00,card transaction,2021-08-03,2021-08,01 restaurant,restaurant,1349.1200000000001
 -1459.7,6572 [stcpay],salary,2021-08-03 00:00:00,salary,2021-08-03,2021-08,06 stcpay,stcpay,-110.57999999999993
 132.65,6450,afaq food for food tra,2021-08-04 19:51:00,card transaction,2021-08-04,2021-08,01 restaurant,restaurant,22.07000000000008
 205.82,6450,di cafe est,2021-08-04 20:37:00,card transaction,2021-08-04,2021-08,02 coffee,coffee,227.89000000000007
-170.11,6572 [stcpay],sender name: reem al subaie,2021-08-04 00:00:00,stcpay credit,2021-08-04,2021-08,06 stcpay,stcpay,398.0000000000001
-208.39,6572 [stcpay],sender name: tariq abduljalil,2021-08-04 00:00:00,stcpay credit,2021-08-04,2021-08,06 stcpay,stcpay,606.3900000000001
-34.52,6572 [stcpay],sender name: fahad alharthi,2021-08-04 00:00:00,stcpay credit,2021-08-04,2021-08,06 stcpay,stcpay,640.9100000000001
+170.11,6572 [stcpay],redacted!,2021-08-04 00:00:00,stcpay credit,2021-08-04,2021-08,06 stcpay,stcpay,398.0000000000001
+208.39,6572 [stcpay],redacted!,2021-08-04 00:00:00,stcpay credit,2021-08-04,2021-08,06 stcpay,stcpay,606.3900000000001
+34.52,6572 [stcpay],redacted!,2021-08-04 00:00:00,stcpay credit,2021-08-04,2021-08,06 stcpay,stcpay,640.9100000000001
 267.1,0228,halalah,2021-08-05 09:34:00,mada transaction,2021-08-05,2021-08,05 laundry,laundry,908.0100000000001
 124.35,6450,لدى  netflix.com,2021-08-05 05:09:00,internet purchase,2021-08-05,2021-08,10 bills,bills,1032.3600000000001
 155.19,0228,fawal khairat t,2021-08-06 10:50:00,mada transaction,2021-08-06,2021-08,01 restaurant,restaurant,1187.5500000000002
 159.53,6450,black barn company,2021-08-06 21:41:00,card transaction,2021-08-06,2021-08,11 other,other,1347.0800000000002
 84.5,6450,black barn company,2021-08-06 21:56:00,card transaction,2021-08-06,2021-08,11 other,other,1431.5800000000002
-67.8,6572 [stcpay],sender name: hassah albassam,2021-08-06 00:00:00,stcpay credit,2021-08-06,2021-08,06 stcpay,stcpay,1499.38
+67.8,6572 [stcpay],redacted!,2021-08-06 00:00:00,stcpay credit,2021-08-06,2021-08,06 stcpay,stcpay,1499.38
 290.09,0228,mohammed alsalh,2021-08-07 21:36:00,mada transaction,2021-08-07,2021-08,11 other,other,1789.47
 243.33,6450,algahwah alarigah co,2021-08-07 19:00:00,card transaction,2021-08-07,2021-08,11 other,other,2032.8000000000002
 290.05,6450,tamweenat alshabakah a,2021-08-07 14:06:00,card transaction,2021-08-07,2021-08,03 market,market,2322.8500000000004
 182.32,6450,alzalal restaurants,2021-08-07 13:51:00,card transaction,2021-08-07,2021-08,01 restaurant,restaurant,2505.17
 153.34,6450,alsaah altaseah co,2021-08-07 16:48:00,card transaction,2021-08-07,2021-08,11 other,other,2658.51
 40.08,6450,tamweenat alshabakah a,2021-08-08 09:05:00,card transaction,2021-08-08,2021-08,03 market,market,2698.59
-32.22,6572 [stcpay],sender name: fahad alharthi,2021-08-08 00:00:00,stcpay credit,2021-08-08,2021-08,06 stcpay,stcpay,2730.81
-226.29,6572 [stcpay],sender name: naif alrugaib,2021-08-08 00:00:00,stcpay credit,2021-08-08,2021-08,06 stcpay,stcpay,2957.1000000000004
-139.46,6572 [stcpay],sender name: عادل عبدالحبيب,2021-08-08 00:00:00,stcpay credit,2021-08-08,2021-08,06 stcpay,stcpay,3096.56
-107.39,6572 [stcpay],sender name: abdullah basulaib,2021-08-08 00:00:00,stcpay credit,2021-08-08,2021-08,06 stcpay,stcpay,3203.9500000000003
-159.37,6572 [stcpay],sender name: adam hammam,2021-08-08 00:00:00,stcpay credit,2021-08-08,2021-08,06 stcpay,stcpay,3363.32
+32.22,6572 [stcpay],redacted!,2021-08-08 00:00:00,stcpay credit,2021-08-08,2021-08,06 stcpay,stcpay,2730.81
+226.29,6572 [stcpay],redacted!,2021-08-08 00:00:00,stcpay credit,2021-08-08,2021-08,06 stcpay,stcpay,2957.1000000000004
+139.46,6572 [stcpay],redacted!,2021-08-08 00:00:00,stcpay credit,2021-08-08,2021-08,06 stcpay,stcpay,3096.56
+107.39,6572 [stcpay],redacted!,2021-08-08 00:00:00,stcpay credit,2021-08-08,2021-08,06 stcpay,stcpay,3203.9500000000003
+159.37,6572 [stcpay],redacted!,2021-08-08 00:00:00,stcpay credit,2021-08-08,2021-08,06 stcpay,stcpay,3363.32
 223.03,6572 [stcpay],salary,2021-08-08 00:00:00,stcpay credit,2021-08-08,2021-08,06 stcpay,stcpay,3586.3500000000004
 233.33,6450,matam zahrt alzhal,2021-08-08 19:59:00,card transaction,2021-08-08,2021-08,11 other,other,3819.6800000000003
-32.83,6572 [stcpay],sender name: sarah alsaif,2021-08-09 00:00:00,stcpay credit,2021-08-09,2021-08,06 stcpay,stcpay,3852.51
+32.83,6572 [stcpay],redacted!,2021-08-09 00:00:00,stcpay credit,2021-08-09,2021-08,06 stcpay,stcpay,3852.51
 196.7,0228,fahad mohammed,2021-08-09 19:49:00,mada transaction,2021-08-09,2021-08,11 other,other,4049.21
 271.07,6450,abdulaah awad alsayari,2021-08-09 09:14:00,card transaction,2021-08-09,2021-08,11 other,other,4320.28
-70.99,6572 [stcpay],sender name: naif alrugaib,2021-08-10 00:00:00,stcpay credit,2021-08-10,2021-08,06 stcpay,stcpay,4391.27
-41.03,6572 [stcpay],sender name: adam hammam,2021-08-10 00:00:00,stcpay credit,2021-08-10,2021-08,06 stcpay,stcpay,4432.3
+70.99,6572 [stcpay],redacted!,2021-08-10 00:00:00,stcpay credit,2021-08-10,2021-08,06 stcpay,stcpay,4391.27
+41.03,6572 [stcpay],redacted!,2021-08-10 00:00:00,stcpay credit,2021-08-10,2021-08,06 stcpay,stcpay,4432.3
 159.75,6450,tamweenat alshabakah a,2021-08-10 20:24:00,card transaction,2021-08-10,2021-08,03 market,market,4592.05
 24.23,6450,bakery portal fast foo,2021-08-10 08:38:00,card transaction,2021-08-10,2021-08,01 restaurant,restaurant,4616.28
 218.28,6450,abdulaah awad alsayari,2021-08-11 08:38:00,card transaction,2021-08-11,2021-08,11 other,other,4834.56
@@ -230,7 +230,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 286.76,0228,jeri oil compan,2021-08-21 18:07:00,mada transaction,2021-08-21,2021-08,04 petrol,petrol,9301.34
 227.56,6450,vox cinemas,2021-08-21 18:56:00,card transaction,2021-08-21,2021-08,11 other,other,9528.9
 20.95,0228,mama noura,2021-08-21 22:07:00,mada transaction,2021-08-21,2021-08,01 restaurant,restaurant,9549.85
-230.49,6572 [stcpay],sender name: majed al hulayel,2021-08-22 00:00:00,stcpay credit,2021-08-22,2021-08,06 stcpay,stcpay,9780.34
+230.49,6572 [stcpay],redacted!,2021-08-22 00:00:00,stcpay credit,2021-08-22,2021-08,06 stcpay,stcpay,9780.34
 66.09,6450,abdulaah awad alsayari,2021-08-22 09:44:00,card transaction,2021-08-22,2021-08,11 other,other,9846.43
 161.81,6450,thmarat altghthiya for,2021-08-22 16:06:00,card transaction,2021-08-22,2021-08,03 market,market,10008.24
 161.62,6450,thmarat altghthiya for,2021-08-22 16:12:00,card transaction,2021-08-22,2021-08,03 market,market,10169.86
@@ -240,13 +240,13 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 160.65,6450,salary,2021-08-23 02:46:00,internet purchase,2021-08-23,2021-08,11 other,other,10992.07
 284.62,0228,fahad mohammed,2021-08-23 09:10:00,mada transaction,2021-08-23,2021-08,11 other,other,11276.69
 296.56,6450,لدى  mobily,2021-08-23 19:09:00,internet purchase,2021-08-23,2021-08,11 other,other,11573.25
-125.14,6572 [stcpay],sender name: majed al hulayel,2021-08-23 00:00:00,stcpay credit,2021-08-23,2021-08,06 stcpay,stcpay,11698.39
+125.14,6572 [stcpay],redacted!,2021-08-23 00:00:00,stcpay credit,2021-08-23,2021-08,06 stcpay,stcpay,11698.39
 154.88,0228,fahad mohammed,2021-08-23 21:31:00,mada transaction,2021-08-23,2021-08,11 other,other,11853.27
-280.95,6572 [stcpay],sender name: mohammed bajuaifer,2021-08-23 00:00:00,stcpay credit,2021-08-23,2021-08,06 stcpay,stcpay,12134.22
+280.95,6572 [stcpay],redacted!,2021-08-23 00:00:00,stcpay credit,2021-08-23,2021-08,06 stcpay,stcpay,12134.22
 266.67,0228,fahad mohammed,2021-08-23 21:31:00,mada transaction,2021-08-23,2021-08,11 other,other,12400.89
-205.91,6572 [stcpay],sender name: hassan alahmed,2021-08-24 00:00:00,stcpay credit,2021-08-24,2021-08,06 stcpay,stcpay,12606.8
+205.91,6572 [stcpay],redacted!,2021-08-24 00:00:00,stcpay credit,2021-08-24,2021-08,06 stcpay,stcpay,12606.8
 221.04,6450,f6or faris,2021-08-24 09:21:00,card transaction,2021-08-24,2021-08,11 other,other,12827.84
-246.72,6572 [stcpay],sender name: adam hammam,2021-08-24 00:00:00,stcpay credit,2021-08-24,2021-08,06 stcpay,stcpay,13074.56
+246.72,6572 [stcpay],redacted!,2021-08-24 00:00:00,stcpay credit,2021-08-24,2021-08,06 stcpay,stcpay,13074.56
 81.37,6450,megastores co. ltd,2021-08-25 22:42:00,card transaction,2021-08-25,2021-08,04 petrol,petrol,13155.93
 142.36,6450,tamweenat alshabakah a,2021-08-25 08:34:00,card transaction,2021-08-25,2021-08,03 market,market,13298.29
 246.62,0228,inma al tswiqia,2021-08-25 19:57:00,mada transaction,2021-08-25,2021-08,11 other,other,13544.91
@@ -264,7 +264,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 182.24,6450,salat albasateen,2021-08-30 16:27:00,card transaction,2021-08-30,2021-08,11 other,other,15556.61
 91.56,6450,ancient coffee trading,2021-08-31 19:52:00,card transaction,2021-08-31,2021-08,02 coffee,coffee,15648.17
 118.66,0228,ayash yahya hus,2021-09-01 09:36:00,mada transaction,2021-09-01,2021-09,11 other,other,118.66
-96.85,6572 [stcpay],sender name: majed al hulayel,2021-09-01 00:00:00,stcpay credit,2021-09-01,2021-09,06 stcpay,stcpay,215.51
+96.85,6572 [stcpay],redacted!,2021-09-01 00:00:00,stcpay credit,2021-09-01,2021-09,06 stcpay,stcpay,215.51
 232.09,6450,abu numan for fast foo,2021-09-02 08:28:00,card transaction,2021-09-02,2021-09,11 other,other,447.6
 127.9,6450,salary,2021-09-02 14:19:00,card transaction,2021-09-02,2021-09,01 restaurant,restaurant,575.5
 89.95,6450,bofet faterat labnan e,2021-09-03 10:14:00,card transaction,2021-09-03,2021-09,11 other,other,665.45
@@ -287,9 +287,9 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 272.63,6450,zawit alrabi llkmalit,2021-09-08 20:35:00,card transaction,2021-09-08,2021-09,03 market,market,3385.87
 78.81,6450,dar krtajah trading es,2021-09-08 20:40:00,card transaction,2021-09-08,2021-09,11 other,other,3464.68
 233.43,0228,mama noura,2021-09-09 14:30:00,mada transaction,2021-09-09,2021-09,01 restaurant,restaurant,3698.11
-240.4,6572 [stcpay],sender name: ahmed alzabidi,2021-09-09 00:00:00,stcpay credit,2021-09-09,2021-09,06 stcpay,stcpay,3938.51
+240.4,6572 [stcpay],redacted!,2021-09-09 00:00:00,stcpay credit,2021-09-09,2021-09,06 stcpay,stcpay,3938.51
 87.89,0228,fahad mohammed,2021-09-09 20:49:00,mada transaction,2021-09-09,2021-09,11 other,other,4026.4
-126.5,6572 [stcpay],sender name: adam hammam,2021-09-09 00:00:00,stcpay credit,2021-09-09,2021-09,06 stcpay,stcpay,4152.9
+126.5,6572 [stcpay],redacted!,2021-09-09 00:00:00,stcpay credit,2021-09-09,2021-09,06 stcpay,stcpay,4152.9
 237.14,0228,shawarma jalila,2021-09-10 18:19:00,mada transaction,2021-09-10,2021-09,01 restaurant,restaurant,4390.04
 31.28,6450,eggz & cheez,2021-09-10 08:58:00,card transaction,2021-09-10,2021-09,11 other,other,4421.32
 203.33,6450,tamweenat alshabakah a,2021-09-10 20:49:00,card transaction,2021-09-10,2021-09,03 market,market,4624.65
@@ -303,17 +303,17 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 216.44,6450,smart memory est,2021-09-11 20:32:00,card transaction,2021-09-11,2021-09,11 other,other,2198.08
 35.19,0228,salary,2021-09-11 20:34:00,mada transaction,2021-09-11,2021-09,11 other,other,2233.27
 116.56,6450,draft cafe,2021-09-11 21:03:00,card transaction,2021-09-11,2021-09,02 coffee,coffee,2349.83
-284.8,6572 [stcpay],sender name: abdulrahman alhashim,2021-09-12 00:00:00,stcpay credit,2021-09-12,2021-09,06 stcpay,stcpay,2634.63
+284.8,6572 [stcpay],redacted!,2021-09-12 00:00:00,stcpay credit,2021-09-12,2021-09,06 stcpay,stcpay,2634.63
 26.39,6450,california burger,2021-09-12 13:52:00,card transaction,2021-09-12,2021-09,01 restaurant,restaurant,2661.02
 72.84,6450,wool world establishme,2021-09-12 20:17:00,card transaction,2021-09-12,2021-09,11 other,other,2733.86
 208.49,6450,wool world establishme,2021-09-12 20:19:00,card transaction,2021-09-12,2021-09,11 other,other,2942.35
 172.53,0228,fahad mohammed,2021-09-12 20:31:00,mada transaction,2021-09-12,2021-09,11 other,other,3114.88
 108.53,6450,aljazera markets co,2021-09-13 19:46:00,card transaction,2021-09-13,2021-09,03 market,market,3223.41
-108.49,6572 [stcpay],sender name: mohammed bajuaifer,2021-09-13 00:00:00,stcpay credit,2021-09-13,2021-09,06 stcpay,stcpay,3331.9
-54.9,6572 [stcpay],sender name: mohammed bajuaifer,2021-09-13 00:00:00,stcpay credit,2021-09-13,2021-09,06 stcpay,stcpay,3386.8
+108.49,6572 [stcpay],redacted!,2021-09-13 00:00:00,stcpay credit,2021-09-13,2021-09,06 stcpay,stcpay,3331.9
+54.9,6572 [stcpay],redacted!,2021-09-13 00:00:00,stcpay credit,2021-09-13,2021-09,06 stcpay,stcpay,3386.8
 71.58,6450,aljazera markets co,2021-09-13 19:44:00,card transaction,2021-09-13,2021-09,03 market,market,3458.38
 133.65,0228,saladwich,2021-09-14 15:46:00,mada transaction,2021-09-14,2021-09,11 other,other,3592.03
-284.48,6572 [stcpay],sender name: adel abdulhabib,2021-09-14 00:00:00,stcpay credit,2021-09-14,2021-09,06 stcpay,stcpay,3876.51
+284.48,6572 [stcpay],redacted!,2021-09-14 00:00:00,stcpay credit,2021-09-14,2021-09,06 stcpay,stcpay,3876.51
 59.26,6450,salat albasateen,2021-09-15 08:32:00,card transaction,2021-09-15,2021-09,11 other,other,3935.77
 221.09,6450,thoq almathaq resturan,2021-09-15 22:23:00,card transaction,2021-09-15,2021-09,01 restaurant,restaurant,4156.86
 178.78,0228,saraia coffe,2021-09-16 18:40:00,mada transaction,2021-09-16,2021-09,02 coffee,coffee,4335.64
@@ -326,7 +326,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 68.56,6450,tamweenat alshabakah a,2021-09-19 19:07:00,card transaction,2021-09-19,2021-09,03 market,market,5453.63
 58.85,0228,wafi energy com,2021-09-20 08:09:00,mada transaction,2021-09-20,2021-09,11 other,other,5512.4800000000005
 294.63,0228,fawal othman,2021-09-20 08:19:00,mada transaction,2021-09-20,2021-09,01 restaurant,restaurant,5807.11
-215.04,6572 [stcpay],sender name: ahmed alzabidi,2021-09-20 00:00:00,stcpay credit,2021-09-20,2021-09,06 stcpay,stcpay,6022.15
+215.04,6572 [stcpay],redacted!,2021-09-20 00:00:00,stcpay credit,2021-09-20,2021-09,06 stcpay,stcpay,6022.15
 181.88,6450,al thmrat restorant,2021-09-20 16:00:00,card transaction,2021-09-20,2021-09,01 restaurant,restaurant,6204.03
 117.71,6450,shawermer,2021-09-21 22:05:00,card transaction,2021-09-21,2021-09,01 restaurant,restaurant,6321.74
 145.97,6450,yaqtena cafe,2021-09-22 20:07:00,card transaction,2021-09-22,2021-09,02 coffee,coffee,6467.71
@@ -341,11 +341,11 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 290.58,6450,tamweenat alshabakah a,2021-09-24 18:56:00,card transaction,2021-09-24,2021-09,03 market,market,7999.04
 182.45,6450,usta asim for food,2021-09-24 15:20:00,card transaction,2021-09-24,2021-09,01 restaurant,restaurant,8181.49
 167.29,6450,لدى  mobily,2021-09-24 13:11:00,internet purchase,2021-09-24,2021-09,11 other,other,8348.78
-298.64,6572 [stcpay],sender name: majed al hulayel,2021-09-24 00:00:00,stcpay credit,2021-09-24,2021-09,06 stcpay,stcpay,8647.42
+298.64,6572 [stcpay],redacted!,2021-09-24 00:00:00,stcpay credit,2021-09-24,2021-09,06 stcpay,stcpay,8647.42
 169.61,6450,al faterah aldemashqiy,2021-09-24 09:28:00,card transaction,2021-09-24,2021-09,11 other,other,8817.03
 89.98,6450,est tbadr trading,2021-09-24 09:31:00,card transaction,2021-09-24,2021-09,11 other,other,8907.01
 47.24,6450,aljazera markets co,2021-09-25 10:52:00,card transaction,2021-09-25,2021-09,03 market,market,8954.25
-124.73,6572 [stcpay],sender name: mohammed bajuaifer,2021-09-25 00:00:00,stcpay credit,2021-09-25,2021-09,06 stcpay,stcpay,9078.98
+124.73,6572 [stcpay],redacted!,2021-09-25 00:00:00,stcpay credit,2021-09-25,2021-09,06 stcpay,stcpay,9078.98
 138.66,6450,shem al khair gas stat,2021-09-25 20:06:00,card transaction,2021-09-25,2021-09,04 petrol,petrol,9217.64
 135.12,6450,tamweenat alshabakah a,2021-09-25 20:50:00,card transaction,2021-09-25,2021-09,03 market,market,9352.76
 157.43,6450,tamweenat alshabakah a,2021-09-25 22:45:00,card transaction,2021-09-25,2021-09,03 market,market,9510.19
@@ -361,17 +361,17 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 30.35,6450,tamweenat alshabakah a,2021-09-27 18:35:00,card transaction,2021-09-27,2021-09,03 market,market,11049.39
 255.59,[SNB account],مستفيد السيد عبدالله جهز صالح الحربي,2021-09-27 19:53:00,transfer,2021-09-27,2021-09,9 transfer,transfer,11304.98
 76.8,0228,tamweenat alsha,2021-09-28 22:44:00,mada transaction,2021-09-28,2021-09,03 market,market,11381.78
-219.09,6572 [stcpay],sender name: وليد العكر,2021-09-28 00:00:00,stcpay credit,2021-09-28,2021-09,06 stcpay,stcpay,11600.87
+219.09,6572 [stcpay],redacted!,2021-09-28 00:00:00,stcpay credit,2021-09-28,2021-09,06 stcpay,stcpay,11600.87
 225.2,0228,mama noura,2021-09-28 22:22:00,mada transaction,2021-09-28,2021-09,01 restaurant,restaurant,11826.07
 264.31,6450,watad company,2021-09-28 19:02:00,card transaction,2021-09-28,2021-09,11 other,other,12090.38
-264.32,6572 [stcpay],sender name: abdullah basulaib,2021-09-28 00:00:00,stcpay credit,2021-09-28,2021-09,06 stcpay,stcpay,12354.7
-66.26,6572 [stcpay],sender name: hassan alahmed,2021-09-28 00:00:00,stcpay credit,2021-09-28,2021-09,06 stcpay,stcpay,12420.96
+264.32,6572 [stcpay],redacted!,2021-09-28 00:00:00,stcpay credit,2021-09-28,2021-09,06 stcpay,stcpay,12354.7
+66.26,6572 [stcpay],redacted!,2021-09-28 00:00:00,stcpay credit,2021-09-28,2021-09,06 stcpay,stcpay,12420.96
 262.49,0228,al afrah restor,2021-09-28 08:36:00,mada transaction,2021-09-28,2021-09,01 restaurant,restaurant,12683.45
 273.61,account,salary,2021-09-28 09:17:00,salary,2021-09-28,2021-09,09 salary,salary,12957.06
 62.67,6450,abo noaman for fas foo,2021-09-29 08:34:00,card transaction,2021-09-29,2021-09,11 other,other,13019.73
 79.12,6450,abo noaman for fas foo,2021-09-29 09:07:00,card transaction,2021-09-29,2021-09,11 other,other,13098.85
 79.96,6450,california burger,2021-09-29 12:57:00,card transaction,2021-09-29,2021-09,01 restaurant,restaurant,13178.81
-141.46,6572 [stcpay],sender name: mohammed bajuaifer,2021-09-29 00:00:00,stcpay credit,2021-09-29,2021-09,06 stcpay,stcpay,13320.27
+141.46,6572 [stcpay],redacted!,2021-09-29 00:00:00,stcpay credit,2021-09-29,2021-09,06 stcpay,stcpay,13320.27
 92.2,0228,afaq food for f,2021-09-29 21:55:00,mada transaction,2021-09-29,2021-09,01 restaurant,restaurant,13412.47
 -1119.6,0228,salary,2021-09-29 22:22:00,salary,2021-09-29,2021-09,03 market,market,12292.87
 132.02,0228,fahad mohammed,2021-09-29 22:23:00,mada transaction,2021-09-29,2021-09,11 other,other,12424.89
@@ -405,11 +405,11 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 178.97,6450,bonny cafe est,2021-10-06 20:25:00,card transaction,2021-10-06,2021-10,02 coffee,coffee,2483.7400000000002
 154.13,6450,perfume est,2021-10-06 21:51:00,card transaction,2021-10-06,2021-10,11 other,other,2637.8700000000003
 81.98,0228,8tamrah abdulla,2021-10-06 23:21:00,mada transaction,2021-10-06,2021-10,11 other,other,2719.8500000000004
-125.59,6572 [stcpay],sender name: عبدالعزيز الرويثي,2021-10-06 00:00:00,stcpay credit,2021-10-06,2021-10,06 stcpay,stcpay,2845.44
+125.59,6572 [stcpay],redacted!,2021-10-06 00:00:00,stcpay credit,2021-10-06,2021-10,06 stcpay,stcpay,2845.44
 31.75,6450,home world est,2021-10-07 00:08:00,card transaction,2021-10-07,2021-10,11 other,other,2877.19
 236.48,6450,tamweenat alshabakah a,2021-10-07 09:53:00,card transaction,2021-10-07,2021-10,03 market,market,3113.67
 204.24,6450,shahrukhan,2021-10-07 14:23:00,card transaction,2021-10-07,2021-10,01 restaurant,restaurant,3317.9100000000003
-227.16,6572 [stcpay],sender name: adel abdulhabib,2021-10-07 00:00:00,stcpay credit,2021-10-07,2021-10,06 stcpay,stcpay,3545.07
+227.16,6572 [stcpay],redacted!,2021-10-07 00:00:00,stcpay credit,2021-10-07,2021-10,06 stcpay,stcpay,3545.07
 217.97,6450,tamweenat alshabakah a,2021-10-07 21:09:00,card transaction,2021-10-07,2021-10,03 market,market,3763.04
 -2584.5,0228,salary,2021-10-08 16:46:00,salary,2021-10-08,2021-10,11 other,other,1178.54
 252.15,6450,shawermer,2021-10-08 14:42:00,card transaction,2021-10-08,2021-10,01 restaurant,restaurant,1430.69
@@ -420,12 +420,12 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 244.86,6450,fire grill,2021-10-11 14:07:00,card transaction,2021-10-11,2021-10,01 restaurant,restaurant,2410.64
 37.59,6450,aldrees 104,2021-10-11 23:46:00,card transaction,2021-10-11,2021-10,04 petrol,petrol,2448.23
 138.47,6450,taif alkhalidiya petro,2021-10-11 23:53:00,card transaction,2021-10-11,2021-10,04 petrol,petrol,2586.7
-138.9,6572 [stcpay],sender name: majed al hulayel,2021-10-12 00:00:00,stcpay credit,2021-10-12,2021-10,06 stcpay,stcpay,2725.6
-74.03,6572 [stcpay],sender name: adel abdulhabib,2021-10-12 00:00:00,stcpay credit,2021-10-12,2021-10,06 stcpay,stcpay,2799.63
+138.9,6572 [stcpay],redacted!,2021-10-12 00:00:00,stcpay credit,2021-10-12,2021-10,06 stcpay,stcpay,2725.6
+74.03,6572 [stcpay],redacted!,2021-10-12 00:00:00,stcpay credit,2021-10-12,2021-10,06 stcpay,stcpay,2799.63
 161.27,6450,salary,2021-10-12 14:11:00,card transaction,2021-10-12,2021-10,01 restaurant,restaurant,2960.9
 151.81,0228,halalah,2021-10-12 09:57:00,mada transaction,2021-10-12,2021-10,05 laundry,laundry,3112.71
-262.97,6572 [stcpay],sender name: abdullah basulaib,2021-10-12 00:00:00,stcpay credit,2021-10-12,2021-10,06 stcpay,stcpay,3375.6800000000003
-71.7,6572 [stcpay],sender name: وليد العكر,2021-10-12 00:00:00,stcpay credit,2021-10-12,2021-10,06 stcpay,stcpay,3447.38
+262.97,6572 [stcpay],redacted!,2021-10-12 00:00:00,stcpay credit,2021-10-12,2021-10,06 stcpay,stcpay,3375.6800000000003
+71.7,6572 [stcpay],redacted!,2021-10-12 00:00:00,stcpay credit,2021-10-12,2021-10,06 stcpay,stcpay,3447.38
 227.77,0228,fahad mohammed,2021-10-13 09:49:00,mada transaction,2021-10-13,2021-10,11 other,other,3675.15
 105.91,6450,tamweenat alshabakah a,2021-10-13 09:52:00,card transaction,2021-10-13,2021-10,03 market,market,3781.06
 190.4,6450,لدى  hungerstation,2021-10-13 18:57:00,internet purchase,2021-10-13,2021-10,04 petrol,petrol,3971.46
@@ -440,11 +440,11 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 75.72,0228,makhbaz alrubai,2021-10-17 06:08:00,mada transaction,2021-10-17,2021-10,11 other,other,5328.18
 171.79,6450,madenat alkahwah resta,2021-10-17 06:49:00,card transaction,2021-10-17,2021-10,01 restaurant,restaurant,5499.97
 41.29,0228,wafi energy com,2021-10-17 09:20:00,mada transaction,2021-10-17,2021-10,11 other,other,5541.26
-153.56,6572 [stcpay],sender name: abdulrahman alfawzan,2021-10-17 00:00:00,stcpay credit,2021-10-17,2021-10,06 stcpay,stcpay,5694.82
+153.56,6572 [stcpay],redacted!,2021-10-17 00:00:00,stcpay credit,2021-10-17,2021-10,06 stcpay,stcpay,5694.82
 128.88,6450,lean meals,2021-10-17 21:00:00,card transaction,2021-10-17,2021-10,11 other,other,5823.7
 115.65,0228,stc pay,2021-10-18 14:28:00,mada transaction,2021-10-18,2021-10,06 stcpay,stcpay,5939.35
-29.57,6572 [stcpay],sender name: عبدالعزيز الرويثي,2021-10-18 00:00:00,stcpay credit,2021-10-18,2021-10,06 stcpay,stcpay,5968.92
-184.16,6572 [stcpay],sender name: hassan alahmed,2021-10-18 00:00:00,stcpay credit,2021-10-18,2021-10,06 stcpay,stcpay,6153.08
+29.57,6572 [stcpay],redacted!,2021-10-18 00:00:00,stcpay credit,2021-10-18,2021-10,06 stcpay,stcpay,5968.92
+184.16,6572 [stcpay],redacted!,2021-10-18 00:00:00,stcpay credit,2021-10-18,2021-10,06 stcpay,stcpay,6153.08
 89.78,6450,tamweenat alshabakah a,2021-10-18 22:25:00,card transaction,2021-10-18,2021-10,03 market,market,6242.86
 234.87,0228,khaled mohammed,2021-10-18 23:33:00,mada transaction,2021-10-18,2021-10,11 other,other,6477.7300000000005
 66.8,6450,dining delight co,2021-10-19 14:14:00,card transaction,2021-10-19,2021-10,11 other,other,6544.53
@@ -453,11 +453,11 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 131.77,0228,halalah,2021-10-20 09:50:00,mada transaction,2021-10-20,2021-10,11 other,other,4036.2799999999997
 191.12,6450,bww sahafa,2021-10-20 16:09:00,card transaction,2021-10-20,2021-10,11 other,other,4227.4
 77.57,6450,salary,2021-10-20 21:53:00,card transaction,2021-10-20,2021-10,03 market,market,4304.969999999999
-266.96,6572 [stcpay],sender name: ali balubaid,2021-10-21 00:00:00,stcpay credit,2021-10-21,2021-10,06 stcpay,stcpay,4571.929999999999
+266.96,6572 [stcpay],redacted!,2021-10-21 00:00:00,stcpay credit,2021-10-21,2021-10,06 stcpay,stcpay,4571.929999999999
 217.42,6450,alhdaiaia moul combani,2021-10-22 18:17:00,card transaction,2021-10-22,2021-10,11 other,other,4789.349999999999
 119.02,6450,crowne plaza riyadh ho,2021-10-22 23:02:00,card transaction,2021-10-22,2021-10,11 other,other,4908.37
-64.79,6572 [stcpay],sender name: fadi talha,2021-10-22 00:00:00,stcpay credit,2021-10-22,2021-10,06 stcpay,stcpay,4973.16
-49.18,6572 [stcpay],sender name: khalid alsarhan,2021-10-22 00:00:00,stcpay credit,2021-10-22,2021-10,06 stcpay,stcpay,5022.34
+64.79,6572 [stcpay],redacted!,2021-10-22 00:00:00,stcpay credit,2021-10-22,2021-10,06 stcpay,stcpay,4973.16
+49.18,6572 [stcpay],redacted!,2021-10-22 00:00:00,stcpay credit,2021-10-22,2021-10,06 stcpay,stcpay,5022.34
 284.81,6450,kermes cafe,2021-10-23 15:33:00,card transaction,2021-10-23,2021-10,02 coffee,coffee,5307.15
 32.92,0228,afaq albarkh su,2021-10-23 13:38:00,mada transaction,2021-10-23,2021-10,11 other,other,5340.07
 104.18,0228,al rajhi bank riyadh sa,2021-10-23 12:54:00,cash withdraw,2021-10-23,2021-10,10 cash_withdraw,cash_withdraw,5444.25
@@ -531,7 +531,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 297.52,6450,tamwenat khairat almon,2021-11-18 09:13:00,card transaction,2021-11-18,2021-11,03 market,market,5945.76
 55.08,6450,hala market,2021-11-18 19:44:00,card transaction,2021-11-18,2021-11,03 market,market,6000.84
 227.84,6450,food gate co.,2021-11-18 19:46:00,card transaction,2021-11-18,2021-11,01 restaurant,restaurant,6228.68
-45.55,6572 [stcpay],sender name: hassan alahmed,2021-11-19 00:00:00,stcpay credit,2021-11-19,2021-11,06 stcpay,stcpay,6274.23
+45.55,6572 [stcpay],redacted!,2021-11-19 00:00:00,stcpay credit,2021-11-19,2021-11,06 stcpay,stcpay,6274.23
 253.91,0228,lazat alhayat,2021-11-20 16:21:00,mada transaction,2021-11-20,2021-11,11 other,other,6528.14
 220.09,0228,station petro g,2021-11-20 19:45:00,mada transaction,2021-11-20,2021-11,04 petrol,petrol,6748.23
 242.77,6450,salary,2021-11-21 09:33:00,card transaction,2021-11-21,2021-11,11 other,other,6991.0
@@ -582,8 +582,8 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 187.54,6450,halalah,2021-12-08 20:12:00,card transaction,2021-12-08,2021-12,05 laundry,laundry,90.24000000000015
 68.16,6450,fawal tarwiqat alafrah,2021-12-09 08:54:00,card transaction,2021-12-09,2021-12,01 restaurant,restaurant,158.40000000000015
 183.79,6450,alromansia company ltd,2021-12-09 14:07:00,card transaction,2021-12-09,2021-12,01 restaurant,restaurant,342.19000000000017
-27.98,6572 [stcpay],sender name: majed al hulayel,2021-12-09 00:00:00,stcpay credit,2021-12-09,2021-12,06 stcpay,stcpay,370.17000000000013
-248.08,6572 [stcpay],sender name: mohammed bajuaifer,2021-12-09 00:00:00,stcpay credit,2021-12-09,2021-12,06 stcpay,stcpay,618.2500000000001
+27.98,6572 [stcpay],redacted!,2021-12-09 00:00:00,stcpay credit,2021-12-09,2021-12,06 stcpay,stcpay,370.17000000000013
+248.08,6572 [stcpay],redacted!,2021-12-09 00:00:00,stcpay credit,2021-12-09,2021-12,06 stcpay,stcpay,618.2500000000001
 166.99,6450,home world est,2021-12-09 18:08:00,card transaction,2021-12-09,2021-12,11 other,other,785.2400000000001
 299.09,6450,shiro,2021-12-10 15:21:00,card transaction,2021-12-10,2021-12,01 restaurant,restaurant,1084.3300000000002
 90.52,6450,sahem al-khair auto el,2021-12-10 18:59:00,card transaction,2021-12-10,2021-12,11 other,other,1174.8500000000001
@@ -602,7 +602,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 36.1,6450,halalah,2021-12-16 08:19:00,card transaction,2021-12-16,2021-12,05 laundry,laundry,2504.54
 179.66,0228,arabica cafe lt,2021-12-16 08:42:00,mada transaction,2021-12-16,2021-12,02 coffee,coffee,2684.2000000000003
 141.09,6450,dining delight co,2021-12-16 14:25:00,card transaction,2021-12-16,2021-12,11 other,other,2825.29
-213.05,6572 [stcpay],sender name: عبدالعزيز الرويثي,2021-12-16 00:00:00,stcpay credit,2021-12-16,2021-12,06 stcpay,stcpay,3038.34
+213.05,6572 [stcpay],redacted!,2021-12-16 00:00:00,stcpay credit,2021-12-16,2021-12,06 stcpay,stcpay,3038.34
 210.38,6450,dining delight co,2021-12-16 15:02:00,card transaction,2021-12-16,2021-12,11 other,other,3248.7200000000003
 151.93,0228,khaled alghamdi,2021-12-16 21:15:00,mada transaction,2021-12-16,2021-12,11 other,other,3400.65
 43.33,[SNB account],إلى: علي الناصر مصرف arab national bank,2021-12-16 13:39:00,immediate transfer,2021-12-16,2021-12,08 investment,investment,3443.98
@@ -653,14 +653,14 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 191.13,6450,jdyr ltqdym alwjbat es,2022-01-04 20:19:00,card transaction,2022-01-04,2022-01,11 other,other,2240.2200000000003
 105.82,6450,لدى  netflix.com,2022-01-05 08:27:00,internet purchase,2022-01-05,2022-01,10 bills,bills,2346.04
 203.38,6450,masar althog co,2022-01-06 19:15:00,card transaction,2022-01-06,2022-01,11 other,other,2549.42
-53.08,6572 [stcpay],sender name: abdullah basulaib,2022-01-06 00:00:00,stcpay credit,2022-01-06,2022-01,06 stcpay,stcpay,2602.5
-251.26,6572 [stcpay],sender name: ahmed alzabidi,2022-01-06 00:00:00,stcpay credit,2022-01-06,2022-01,06 stcpay,stcpay,2853.76
-222.23,6572 [stcpay],sender name: عادل عبدالحبيب,2022-01-06 00:00:00,stcpay credit,2022-01-06,2022-01,06 stcpay,stcpay,3075.99
-285.54,6572 [stcpay],sender name: majed al hulayel,2022-01-06 00:00:00,stcpay credit,2022-01-06,2022-01,06 stcpay,stcpay,3361.5299999999997
+53.08,6572 [stcpay],redacted!,2022-01-06 00:00:00,stcpay credit,2022-01-06,2022-01,06 stcpay,stcpay,2602.5
+251.26,6572 [stcpay],redacted!,2022-01-06 00:00:00,stcpay credit,2022-01-06,2022-01,06 stcpay,stcpay,2853.76
+222.23,6572 [stcpay],redacted!,2022-01-06 00:00:00,stcpay credit,2022-01-06,2022-01,06 stcpay,stcpay,3075.99
+285.54,6572 [stcpay],redacted!,2022-01-06 00:00:00,stcpay credit,2022-01-06,2022-01,06 stcpay,stcpay,3361.5299999999997
 47.34,0228,arabica cafe lt,2022-01-06 08:55:00,mada transaction,2022-01-06,2022-01,02 coffee,coffee,3408.87
-245.06,6572 [stcpay],sender name: abdulrahman alfawzan,2022-01-06 00:00:00,stcpay credit,2022-01-06,2022-01,06 stcpay,stcpay,3653.93
+245.06,6572 [stcpay],redacted!,2022-01-06 00:00:00,stcpay credit,2022-01-06,2022-01,06 stcpay,stcpay,3653.93
 242.73,6450,petromin express-1228,2022-01-06 09:10:00,card transaction,2022-01-06,2022-01,04 petrol,petrol,3896.66
-265.38,6572 [stcpay],sender name: adam hammam,2022-01-06 00:00:00,stcpay credit,2022-01-06,2022-01,06 stcpay,stcpay,4162.04
+265.38,6572 [stcpay],redacted!,2022-01-06 00:00:00,stcpay credit,2022-01-06,2022-01,06 stcpay,stcpay,4162.04
 169.65,6450,branch of al grilled a,2022-01-06 17:52:00,card transaction,2022-01-06,2022-01,01 restaurant,restaurant,4331.69
 140.01,6450,branch of al grilled a,2022-01-06 17:57:00,card transaction,2022-01-06,2022-01,01 restaurant,restaurant,4471.7
 167.45,6450,salary,2022-01-06 09:18:00,card transaction,2022-01-06,2022-01,11 other,other,4639.15
@@ -685,18 +685,18 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 249.0,0228,naif saeed   es,2022-01-16 07:16:00,mada transaction,2022-01-16,2022-01,11 other,other,6456.34
 269.09,6450,tamwenat khairat almon,2022-01-16 19:57:00,card transaction,2022-01-16,2022-01,03 market,market,6725.43
 245.91,6450,maqlubat aldaar lilakl,2022-01-17 14:09:00,card transaction,2022-01-17,2022-01,11 other,other,6971.34
-36.47,6572 [stcpay],sender name: abdullah basulaib,2022-01-17 00:00:00,stcpay credit,2022-01-17,2022-01,06 stcpay,stcpay,7007.8099999999995
-275.72,6572 [stcpay],sender name: mohammed hejazi,2022-01-17 00:00:00,stcpay credit,2022-01-17,2022-01,06 stcpay,stcpay,7283.53
+36.47,6572 [stcpay],redacted!,2022-01-17 00:00:00,stcpay credit,2022-01-17,2022-01,06 stcpay,stcpay,7007.8099999999995
+275.72,6572 [stcpay],redacted!,2022-01-17 00:00:00,stcpay credit,2022-01-17,2022-01,06 stcpay,stcpay,7283.53
 188.93,6450,tamwenat khairat almon,2022-01-17 19:53:00,card transaction,2022-01-17,2022-01,03 market,market,7472.46
 -1026.1,0228,salary,2022-01-18 20:10:00,salary,2022-01-18,2022-01,11 other,other,6446.360000000001
 84.86,0228,abdullah awad a,2022-01-18 20:05:00,mada transaction,2022-01-18,2022-01,11 other,other,6531.22
 243.37,6450,tones coffee,2022-01-18 19:20:00,card transaction,2022-01-18,2022-01,02 coffee,coffee,6774.59
-222.85,6572 [stcpay],sender name: mohammed bajuaifer,2022-01-18 00:00:00,stcpay credit,2022-01-18,2022-01,06 stcpay,stcpay,6997.4400000000005
-55.27,6572 [stcpay],sender name: ahmed alzabidi,2022-01-18 00:00:00,stcpay credit,2022-01-18,2022-01,06 stcpay,stcpay,7052.71
+222.85,6572 [stcpay],redacted!,2022-01-18 00:00:00,stcpay credit,2022-01-18,2022-01,06 stcpay,stcpay,6997.4400000000005
+55.27,6572 [stcpay],redacted!,2022-01-18 00:00:00,stcpay credit,2022-01-18,2022-01,06 stcpay,stcpay,7052.71
 21.93,6450,salary,2022-01-18 14:05:00,card transaction,2022-01-18,2022-01,01 restaurant,restaurant,7074.64
-269.88,6572 [stcpay],sender name: abdulrahman alhashim,2022-01-18 00:00:00,stcpay credit,2022-01-18,2022-01,06 stcpay,stcpay,7344.52
-113.14,6572 [stcpay],sender name: fahad alharthi,2022-01-18 00:00:00,stcpay credit,2022-01-18,2022-01,06 stcpay,stcpay,7457.66
-284.35,6572 [stcpay],sender name: adam hammam,2022-01-18 00:00:00,stcpay credit,2022-01-18,2022-01,06 stcpay,stcpay,7742.01
+269.88,6572 [stcpay],redacted!,2022-01-18 00:00:00,stcpay credit,2022-01-18,2022-01,06 stcpay,stcpay,7344.52
+113.14,6572 [stcpay],redacted!,2022-01-18 00:00:00,stcpay credit,2022-01-18,2022-01,06 stcpay,stcpay,7457.66
+284.35,6572 [stcpay],redacted!,2022-01-18 00:00:00,stcpay credit,2022-01-18,2022-01,06 stcpay,stcpay,7742.01
 286.05,6450,tamwenat khairat almon,2022-01-19 09:07:00,card transaction,2022-01-19,2022-01,03 market,market,8028.06
 108.27,6450,bww sahafa,2022-01-19 20:59:00,card transaction,2022-01-19,2022-01,11 other,other,8136.33
 147.05,0228,halalah,2022-01-20 08:31:00,mada transaction,2022-01-20,2022-01,05 laundry,laundry,8283.380000000001
@@ -716,10 +716,10 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 61.82,6450,لدى  sun and sand sports co,2022-01-25 09:34:00,internet purchase,2022-01-25,2022-01,11 other,other,10456.79
 238.47,0228,fawal othman,2022-01-25 09:31:00,mada transaction,2022-01-25,2022-01,01 restaurant,restaurant,10695.26
 78.37,6450,tamwenat khairat almon,2022-01-25 20:31:00,card transaction,2022-01-25,2022-01,03 market,market,10773.630000000001
-23.43,6572 [stcpay],sender name: ahmed alzabidi,2022-01-25 00:00:00,stcpay credit,2022-01-25,2022-01,06 stcpay,stcpay,10797.06
+23.43,6572 [stcpay],redacted!,2022-01-25 00:00:00,stcpay credit,2022-01-25,2022-01,06 stcpay,stcpay,10797.06
 92.88,6450,sushi art-exit 5,2022-01-25 18:54:00,card transaction,2022-01-25,2022-01,01 restaurant,restaurant,10889.94
 134.78,6450,halalah,2022-01-25 20:29:00,card transaction,2022-01-25,2022-01,05 laundry,laundry,11024.72
-261.12,6572 [stcpay],sender name: majed al hulayel,2022-01-25 00:00:00,stcpay credit,2022-01-25,2022-01,06 stcpay,stcpay,11285.84
+261.12,6572 [stcpay],redacted!,2022-01-25 00:00:00,stcpay credit,2022-01-25,2022-01,06 stcpay,stcpay,11285.84
 54.52,6450,لدى  mobily,2022-01-25 16:52:00,internet purchase,2022-01-25,2022-01,11 other,other,11340.36
 246.13,6450,spread,2022-01-26 20:36:00,card transaction,2022-01-26,2022-01,01 restaurant,restaurant,11586.49
 82.64,6450,kyan,2022-01-27 18:29:00,card transaction,2022-01-27,2022-01,11 other,other,11669.130000000001
@@ -732,9 +732,9 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 -294.1,0228,salary,2022-01-30 21:59:00,salary,2022-01-30,2022-01,11 other,other,12410.630000000001
 35.74,0228,stc pay,2022-01-31 20:02:00,mada transaction,2022-01-31,2022-01,06 stcpay,stcpay,12446.37
 250.89,0228,aldrees 241,2022-01-31 07:25:00,mada transaction,2022-01-31,2022-01,04 petrol,petrol,12697.26
-115.88,6572 [stcpay],sender name: majed al hulayel,2022-02-02 00:00:00,stcpay credit,2022-02-02,2022-02,06 stcpay,stcpay,115.88
-196.76,6572 [stcpay],sender name: عادل عبدالحبيب,2022-02-02 00:00:00,stcpay credit,2022-02-02,2022-02,06 stcpay,stcpay,312.64
-126.82,6572 [stcpay],sender name: fahad alharthi,2022-02-02 00:00:00,stcpay credit,2022-02-02,2022-02,06 stcpay,stcpay,439.46
+115.88,6572 [stcpay],redacted!,2022-02-02 00:00:00,stcpay credit,2022-02-02,2022-02,06 stcpay,stcpay,115.88
+196.76,6572 [stcpay],redacted!,2022-02-02 00:00:00,stcpay credit,2022-02-02,2022-02,06 stcpay,stcpay,312.64
+126.82,6572 [stcpay],redacted!,2022-02-02 00:00:00,stcpay credit,2022-02-02,2022-02,06 stcpay,stcpay,439.46
 110.36,6450,halalah,2022-02-02 21:24:00,card transaction,2022-02-02,2022-02,05 laundry,laundry,549.8199999999999
 60.62,account,salary,2022-02-02 11:00:00,salary,2022-02-02,2022-02,09 salary,salary,610.4399999999999
 156.28,6450,nour al hana restauran,2022-02-02 15:00:00,card transaction,2022-02-02,2022-02,01 restaurant,restaurant,766.72
@@ -748,7 +748,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 149.03,6450,tasty tais company,2022-02-05 22:37:00,card transaction,2022-02-05,2022-02,01 restaurant,restaurant,2241.36
 108.98,6450,godiva,2022-02-07 20:30:00,card transaction,2022-02-07,2022-02,11 other,other,2350.34
 34.15,6450,zawiat alyasamin,2022-02-07 08:55:00,card transaction,2022-02-07,2022-02,03 market,market,2384.4900000000002
-258.09,6572 [stcpay],sender name: hassan alahmed,2022-02-07 00:00:00,stcpay credit,2022-02-07,2022-02,06 stcpay,stcpay,2642.58
+258.09,6572 [stcpay],redacted!,2022-02-07 00:00:00,stcpay credit,2022-02-07,2022-02,06 stcpay,stcpay,2642.58
 241.33,6450,halalah,2022-02-08 21:09:00,card transaction,2022-02-08,2022-02,11 other,other,2883.91
 91.78,6450,thmarat altghthiya for,2022-02-08 09:24:00,card transaction,2022-02-08,2022-02,03 market,market,2975.69
 168.06,6450,dar al fatera restaura,2022-02-08 21:00:00,card transaction,2022-02-08,2022-02,01 restaurant,restaurant,3143.75
@@ -766,7 +766,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 177.57,6450,hasawi,2022-02-13 20:03:00,card transaction,2022-02-13,2022-02,11 other,other,5000.13
 268.42,6450,salary,2022-02-14 21:08:00,card transaction,2022-02-14,2022-02,11 other,other,5268.55
 50.38,6450,nour al hana restauran,2022-02-15 15:09:00,card transaction,2022-02-15,2022-02,01 restaurant,restaurant,5318.93
-194.64,6572 [stcpay],sender name: hassan ahmed hussain alahmed,2022-02-15 00:00:00,stcpay credit,2022-02-15,2022-02,06 stcpay,stcpay,5513.57
+194.64,6572 [stcpay],redacted!,2022-02-15 00:00:00,stcpay credit,2022-02-15,2022-02,06 stcpay,stcpay,5513.57
 47.95,6450,al rimaya,2022-02-15 21:45:00,card transaction,2022-02-15,2022-02,11 other,other,5561.52
 261.28,6450,mahat fares alsubeai,2022-02-16 21:30:00,card transaction,2022-02-16,2022-02,11 other,other,5822.8
 101.23,6450,mahat fares alsubeai,2022-02-16 21:29:00,card transaction,2022-02-16,2022-02,11 other,other,5924.03
@@ -826,16 +826,16 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 122.72,6450,halalah,2022-03-07 19:29:00,card transaction,2022-03-07,2022-03,05 laundry,laundry,302.76
 -2155.0,6450,salary,2022-03-08 19:05:00,salary,2022-03-08,2022-03,11 other,other,-1852.24
 211.58,6450,karam beirut - tahlia,2022-03-08 23:46:00,card transaction,2022-03-08,2022-03,11 other,other,-1640.66
-208.07,6572 [stcpay],sender name: majed ridha ali al hulayel,2022-03-08 00:00:00,stcpay credit,2022-03-08,2022-03,06 stcpay,stcpay,-1432.59
+208.07,6572 [stcpay],redacted!,2022-03-08 00:00:00,stcpay credit,2022-03-08,2022-03,06 stcpay,stcpay,-1432.59
 223.25,6450,coffee style cafe,2022-03-08 09:12:00,card transaction,2022-03-08,2022-03,02 coffee,coffee,-1209.34
-91.92,6572 [stcpay],sender name: fahad wasel alharthi,2022-03-08 00:00:00,stcpay credit,2022-03-08,2022-03,06 stcpay,stcpay,-1117.42
+91.92,6572 [stcpay],redacted!,2022-03-08 00:00:00,stcpay credit,2022-03-08,2022-03,06 stcpay,stcpay,-1117.42
 223.52,6450,branch of al grilled a,2022-03-08 13:30:00,card transaction,2022-03-08,2022-03,01 restaurant,restaurant,-893.9
 294.62,6450,resturant services tra,2022-03-09 20:03:00,card transaction,2022-03-09,2022-03,01 restaurant,restaurant,-599.28
-225.14,6572 [stcpay],sender name: abdullah mohammed basulaib,2022-03-10 00:00:00,stcpay credit,2022-03-10,2022-03,06 stcpay,stcpay,-374.14
+225.14,6572 [stcpay],redacted!,2022-03-10 00:00:00,stcpay credit,2022-03-10,2022-03,06 stcpay,stcpay,-374.14
 60.84,6450,shawermer,2022-03-10 18:40:00,card transaction,2022-03-10,2022-03,01 restaurant,restaurant,-313.29999999999995
 118.85,0228,petroly co,2022-03-10 18:53:00,mada transaction,2022-03-10,2022-03,04 petrol,petrol,-194.45
 176.59,0228,narees coffee,2022-03-10 19:09:00,mada transaction,2022-03-10,2022-03,02 coffee,coffee,-17.859999999999985
-42.79,6572 [stcpay],sender name: qassem nasser alnasser,2022-03-10 00:00:00,stcpay credit,2022-03-10,2022-03,06 stcpay,stcpay,24.930000000000014
+42.79,6572 [stcpay],redacted!,2022-03-10 00:00:00,stcpay credit,2022-03-10,2022-03,06 stcpay,stcpay,24.930000000000014
 34.08,6450,salon qamar alahsa,2022-03-11 21:24:00,card transaction,2022-03-11,2022-03,11 other,other,59.01000000000001
 294.79,6450,al amer market,2022-03-12 16:30:00,card transaction,2022-03-12,2022-03,03 market,market,353.8
 142.06,6450,bawabat alwarod restur,2022-03-12 20:37:00,card transaction,2022-03-12,2022-03,01 restaurant,restaurant,495.86
@@ -860,16 +860,16 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 232.84,6450,halalah,2022-03-20 19:23:00,card transaction,2022-03-20,2022-03,05 laundry,laundry,2244.07
 -2481.8,6450,salary,2022-03-20 19:14:00,salary,2022-03-20,2022-03,03 market,market,-237.73000000000002
 164.04,6450,s150-tamimi markets,2022-03-20 11:00:00,card transaction,2022-03-20,2022-03,03 market,market,-73.69000000000003
-172.44,6572 [stcpay],sender name: majed ridha ali al hulayel,2022-03-20 00:00:00,stcpay credit,2022-03-20,2022-03,06 stcpay,stcpay,98.74999999999997
+172.44,6572 [stcpay],redacted!,2022-03-20 00:00:00,stcpay credit,2022-03-20,2022-03,06 stcpay,stcpay,98.74999999999997
 91.01,6450,fyafe alqasim est,2022-03-20 10:33:00,card transaction,2022-03-20,2022-03,11 other,other,189.76
-276.73,6572 [stcpay],sender name: abdullah mohammed basulaib,2022-03-20 00:00:00,stcpay credit,2022-03-20,2022-03,06 stcpay,stcpay,466.49
+276.73,6572 [stcpay],redacted!,2022-03-20 00:00:00,stcpay credit,2022-03-20,2022-03,06 stcpay,stcpay,466.49
 298.53,0228,arabica cafe lt,2022-03-21 08:03:00,mada transaction,2022-03-21,2022-03,02 coffee,coffee,765.02
-231.67,6572 [stcpay],sender name: majed ridha ali al hulayel,2022-03-21 00:00:00,stcpay credit,2022-03-21,2022-03,06 stcpay,stcpay,996.6899999999999
+231.67,6572 [stcpay],redacted!,2022-03-21 00:00:00,stcpay credit,2022-03-21,2022-03,06 stcpay,stcpay,996.6899999999999
 58.87,6450,halalah,2022-03-21 18:37:00,card transaction,2022-03-21,2022-03,11 other,other,1055.56
 225.63,6450,hasawi,2022-03-22 21:59:00,card transaction,2022-03-22,2022-03,11 other,other,1281.19
 279.24,6450,salary,2022-03-22 23:02:00,card transaction,2022-03-22,2022-03,01 restaurant,restaurant,1560.4299999999998
 136.27,0228,al zyout al wat,2022-03-23 09:03:00,mada transaction,2022-03-23,2022-03,11 other,other,1696.7
-136.79,6572 [stcpay],sender name: abdullah mohammed basulaib,2022-03-23 00:00:00,stcpay credit,2022-03-23,2022-03,06 stcpay,stcpay,1833.49
+136.79,6572 [stcpay],redacted!,2022-03-23 00:00:00,stcpay credit,2022-03-23,2022-03,06 stcpay,stcpay,1833.49
 215.39,6450,steak house,2022-03-23 20:23:00,card transaction,2022-03-23,2022-03,11 other,other,2048.88
 26.37,6450,لدى  saudi telecom company,2022-03-24 11:04:00,internet purchase,2022-03-24,2022-03,10 bills,bills,2075.25
 115.41,6450,tamwenat khairat almon,2022-03-24 18:43:00,card transaction,2022-03-24,2022-03,03 market,market,2190.66
@@ -956,7 +956,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 144.55,6450,alhdaiaia moul combani,2022-04-25 23:07:00,card transaction,2022-04-25,2022-04,11 other,other,4515.2300000000005
 60.14,6450,salary,2022-04-26 01:47:00,card transaction,2022-04-26,2022-04,03 market,market,4575.37
 275.44,6450,alhamra restaurant,2022-04-26 02:10:00,card transaction,2022-04-26,2022-04,01 restaurant,restaurant,4850.81
-108.03,6572 [stcpay],sender name: majed al hulayel,2022-04-26 00:00:00,stcpay credit,2022-04-26,2022-04,06 stcpay,stcpay,4958.84
+108.03,6572 [stcpay],redacted!,2022-04-26 00:00:00,stcpay credit,2022-04-26,2022-04,06 stcpay,stcpay,4958.84
 162.79,6450,nour al hana restauran,2022-04-26 16:26:00,card transaction,2022-04-26,2022-04,01 restaurant,restaurant,5121.63
 78.18,6450,halalah,2022-04-27 00:27:00,card transaction,2022-04-27,2022-04,05 laundry,laundry,5199.81
 30.22,account,salary,2022-04-27 08:47:00,salary,2022-04-27,2022-04,09 salary,salary,5230.030000000001
@@ -975,7 +975,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 158.63,0228,road cafe 115,2022-05-03 11:43:00,mada transaction,2022-05-03,2022-05,02 coffee,coffee,976.19
 51.0,6450,falafel and shawarma c,2022-05-04 03:35:00,card transaction,2022-05-04,2022-05,01 restaurant,restaurant,1027.19
 284.53,6450,لدى  netflix.com,2022-05-05 08:28:00,internet purchase,2022-05-05,2022-05,10 bills,bills,1311.72
-86.9,6572 [stcpay],sender name: ahmed alismail,2022-05-06 00:00:00,stcpay credit,2022-05-06,2022-05,06 stcpay,stcpay,1398.62
+86.9,6572 [stcpay],redacted!,2022-05-06 00:00:00,stcpay credit,2022-05-06,2022-05,06 stcpay,stcpay,1398.62
 137.56,6450,al amer market,2022-05-07 10:35:00,card transaction,2022-05-07,2022-05,03 market,market,1536.18
 115.75,6450,red tag,2022-05-07 11:05:00,card transaction,2022-05-07,2022-05,11 other,other,1651.93
 90.96,6450,signature,2022-05-07 16:08:00,card transaction,2022-05-07,2022-05,11 other,other,1742.8899999999999
@@ -1000,7 +1000,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 256.52,6450,salary,2022-05-14 22:59:00,card transaction,2022-05-14,2022-05,11 other,other,3304.3799999999997
 84.79,6450,petroly co,2022-05-15 19:26:00,card transaction,2022-05-15,2022-05,04 petrol,petrol,3389.1699999999996
 285.91,0228,kermez,2022-05-15 21:11:00,mada transaction,2022-05-15,2022-05,11 other,other,3675.08
-90.3,6572 [stcpay],sender name: hassan alahmed,2022-05-16 00:00:00,stcpay credit,2022-05-16,2022-05,06 stcpay,stcpay,3765.3799999999997
+90.3,6572 [stcpay],redacted!,2022-05-16 00:00:00,stcpay credit,2022-05-16,2022-05,06 stcpay,stcpay,3765.3799999999997
 265.89,6450,aldrees 738,2022-05-16 18:08:00,card transaction,2022-05-16,2022-05,04 petrol,petrol,4031.2699999999995
 129.0,6450,tamwenat khairat almon,2022-05-16 18:11:00,card transaction,2022-05-16,2022-05,03 market,market,4160.2699999999995
 189.31,6572 [stcpay],jahez,2022-05-17 18:17:05,stcpay transaction,2022-05-17,2022-05,01 restaurant,restaurant,4349.58
@@ -1088,9 +1088,9 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 204.28,6450,zawiat alyasamin,2022-06-14 05:32:00,card transaction,2022-06-14,2022-06,03 market,market,3299.9
 229.89,0228,arabica cafe co,2022-06-14 07:13:00,mada transaction,2022-06-14,2022-06,02 coffee,coffee,3529.79
 31.93,6450,alromansia company ltd,2022-06-15 13:21:00,card transaction,2022-06-15,2022-06,01 restaurant,restaurant,3561.7200000000003
-145.0,6572 [stcpay],sender name: majed al hulayel,2022-06-15 00:00:00,stcpay credit,2022-06-15,2022-06,06 stcpay,stcpay,3706.7200000000003
-134.86,6572 [stcpay],sender name: faisal alaloola,2022-06-15 00:00:00,stcpay credit,2022-06-15,2022-06,06 stcpay,stcpay,3841.58
-145.52,6572 [stcpay],sender name: ahmed alzabidi,2022-06-15 00:00:00,stcpay credit,2022-06-15,2022-06,06 stcpay,stcpay,3987.1000000000004
+145.0,6572 [stcpay],redacted!,2022-06-15 00:00:00,stcpay credit,2022-06-15,2022-06,06 stcpay,stcpay,3706.7200000000003
+134.86,6572 [stcpay],redacted!,2022-06-15 00:00:00,stcpay credit,2022-06-15,2022-06,06 stcpay,stcpay,3841.58
+145.52,6572 [stcpay],redacted!,2022-06-15 00:00:00,stcpay credit,2022-06-15,2022-06,06 stcpay,stcpay,3987.1000000000004
 264.26,6450,zawiat alyasamin,2022-06-15 21:56:00,card transaction,2022-06-15,2022-06,03 market,market,4251.360000000001
 66.03,6450,khayrat almntjat llmwa,2022-06-15 22:05:00,card transaction,2022-06-15,2022-06,03 market,market,4317.39
 246.83,6450,halalah,2022-06-16 18:56:00,card transaction,2022-06-16,2022-06,05 laundry,laundry,4564.22
@@ -1212,9 +1212,9 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 203.9,6450,s162-tamimi markets,2022-07-24 18:49:00,card transaction,2022-07-24,2022-07,03 market,market,12696.52
 175.42,6450,mqhy lhn alqhwh ltqdym,2022-07-24 09:33:00,card transaction,2022-07-24,2022-07,11 other,other,12871.94
 80.44,6450,halalah,2022-07-24 09:10:00,card transaction,2022-07-24,2022-07,05 laundry,laundry,12952.38
-54.04,6572 [stcpay],sender name: hassan alahmed,2022-07-24 00:00:00,stcpay credit,2022-07-24,2022-07,06 stcpay,stcpay,13006.42
+54.04,6572 [stcpay],redacted!,2022-07-24 00:00:00,stcpay credit,2022-07-24,2022-07,06 stcpay,stcpay,13006.42
 48.09,6450,prestige,2022-07-24 00:56:00,card transaction,2022-07-24,2022-07,01 restaurant,restaurant,13054.51
-91.62,6572 [stcpay],sender name: abdullah alhawaj,2022-07-24 00:00:00,stcpay credit,2022-07-24,2022-07,06 stcpay,stcpay,13146.13
+91.62,6572 [stcpay],redacted!,2022-07-24 00:00:00,stcpay credit,2022-07-24,2022-07,06 stcpay,stcpay,13146.13
 165.33,6450,s150-tamimi markets,2022-07-25 17:52:00,card transaction,2022-07-25,2022-07,03 market,market,13311.46
 198.86,6450,hanan ltgarah est,2022-07-25 18:13:00,card transaction,2022-07-25,2022-07,11 other,other,13510.32
 38.2,6450,century burger,2022-07-26 18:14:00,card transaction,2022-07-26,2022-07,01 restaurant,restaurant,13548.52
@@ -1331,7 +1331,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 149.82,6572 [stcpay],popeyes,2022-09-09 23:06:01,stcpay transaction,2022-09-09,2022-09,01 restaurant,restaurant,4246.24
 210.13,6572 [stcpay],salary,2022-09-09 09:13:32,stcpay transaction,2022-09-09,2022-09,11 other,other,4456.37
 275.87,6572 [stcpay],halalah,2022-09-09 19:40:27,stcpay transaction,2022-09-09,2022-09,05 laundry,laundry,4732.24
-21.1,6572 [stcpay],sender name: mohammed alnahwi,2022-09-10 00:00:00,stcpay credit,2022-09-10,2022-09,06 stcpay,stcpay,4753.34
+21.1,6572 [stcpay],redacted!,2022-09-10 00:00:00,stcpay credit,2022-09-10,2022-09,06 stcpay,stcpay,4753.34
 68.56,6572 [stcpay],juice time,2022-09-10 21:37:43,stcpay transaction,2022-09-10,2022-09,01 restaurant,restaurant,4821.9
 260.21,6572 [stcpay],halalah,2022-09-10 08:24:44,stcpay transaction,2022-09-10,2022-09,11 other,other,5082.11
 298.23,6572 [stcpay],texas de brazil,2022-09-10 20:33:18,stcpay transaction,2022-09-10,2022-09,01 restaurant,restaurant,5380.34
@@ -1498,7 +1498,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 229.08,6572 [stcpay],shamel food co,2022-10-23 11:19:00,stcpay transaction,2022-10-23,2022-10,01 restaurant,restaurant,9817.51
 151.54,6572 [stcpay],real burger,2022-10-23 18:45:29,stcpay transaction,2022-10-23,2022-10,01 restaurant,restaurant,9969.05
 225.62,6572 [stcpay],real burger,2022-10-23 18:46:31,stcpay transaction,2022-10-23,2022-10,01 restaurant,restaurant,10194.67
-145.21,6572 [stcpay],sender name: mohammed alnahwi,2022-10-23 00:00:00,stcpay credit,2022-10-23,2022-10,06 stcpay,stcpay,10339.88
+145.21,6572 [stcpay],redacted!,2022-10-23 00:00:00,stcpay credit,2022-10-23,2022-10,06 stcpay,stcpay,10339.88
 -1222.0,6572 [stcpay],salary,2022-10-24 19:17:11,salary,2022-10-24,2022-10,01 restaurant,restaurant,9117.880000000001
 64.07,6572 [stcpay],halalah,2022-10-24 19:24:58,stcpay transaction,2022-10-24,2022-10,11 other,other,9181.95
 184.19,6572 [stcpay],shamel food co,2022-10-24 12:02:33,stcpay transaction,2022-10-24,2022-10,01 restaurant,restaurant,9366.14
@@ -1516,7 +1516,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 43.05,6572 [stcpay],chopped market,2022-10-27 22:39:32,stcpay transaction,2022-10-27,2022-10,03 market,market,11175.18
 174.7,6572 [stcpay],chopped market,2022-10-27 22:39:49,stcpay transaction,2022-10-27,2022-10,03 market,market,11349.88
 144.26,6572 [stcpay],spread,2022-10-27 22:42:40,stcpay transaction,2022-10-27,2022-10,01 restaurant,restaurant,11494.14
-183.47,6572 [stcpay],sender name: mohammed alnahwi,2022-10-27 00:00:00,stcpay credit,2022-10-27,2022-10,06 stcpay,stcpay,11677.61
+183.47,6572 [stcpay],redacted!,2022-10-27 00:00:00,stcpay credit,2022-10-27,2022-10,06 stcpay,stcpay,11677.61
 281.32,account,salary,2022-10-27 04:51:00,salary,2022-10-27,2022-10,09 salary,salary,11958.93
 238.31,6572 [stcpay],palm king khalid airport,2022-10-28 17:13:11,stcpay transaction,2022-10-28,2022-10,11 other,other,12197.24
 196.1,6572 [stcpay],sasco king khalid airport,2022-10-28 17:14:04,stcpay transaction,2022-10-28,2022-10,04 petrol,petrol,12393.34
@@ -1551,7 +1551,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 37.59,6572 [stcpay],assaraya turkish restaura,2022-11-04 22:44:27,stcpay transaction,2022-11-04,2022-11,01 restaurant,restaurant,2313.5
 285.72,6572 [stcpay],salary,2022-11-05 12:28:20,stcpay transaction,2022-11-05,2022-11,11 other,other,2599.2200000000003
 46.74,6572 [stcpay],salary,2022-11-05 11:27:05,stcpay transaction,2022-11-05,2022-11,04 petrol,petrol,2645.96
-87.95,6572 [stcpay],sender name: mohammed alnahwi,2022-11-05 00:00:00,stcpay credit,2022-11-05,2022-11,06 stcpay,stcpay,2733.91
+87.95,6572 [stcpay],redacted!,2022-11-05 00:00:00,stcpay credit,2022-11-05,2022-11,06 stcpay,stcpay,2733.91
 287.26,0228,stc pay,2022-11-05 11:25:00,mada transaction,2022-11-05,2022-11,06 stcpay,stcpay,3021.17
 236.89,0228,petroly company,2022-11-05 06:09:00,mada transaction,2022-11-05,2022-11,04 petrol,petrol,3258.06
 225.26,6572 [stcpay],24,2022-11-05 05:59:47,stcpay transaction,2022-11-05,2022-11,02 coffee,coffee,3483.32
@@ -1594,7 +1594,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 159.89,6572 [stcpay],mtam alfterh aldmsgeh,2022-11-15 19:18:03,stcpay transaction,2022-11-15,2022-11,01 restaurant,restaurant,6210.3
 282.05,6572 [stcpay],king khalid international,2022-11-15 20:49:07,stcpay transaction,2022-11-15,2022-11,11 other,other,6492.35
 92.92,6572 [stcpay],salary,2022-11-15 21:06:35,stcpay transaction,2022-11-15,2022-11,01 restaurant,restaurant,6585.27
-24.99,6572 [stcpay],sender name: mohammed alnahwi,2022-11-15 00:00:00,stcpay credit,2022-11-15,2022-11,06 stcpay,stcpay,6610.26
+24.99,6572 [stcpay],redacted!,2022-11-15 00:00:00,stcpay credit,2022-11-15,2022-11,06 stcpay,stcpay,6610.26
 196.56,6572 [stcpay],mtam alfterh aldmsgeh,2022-11-15 21:10:28,stcpay transaction,2022-11-15,2022-11,01 restaurant,restaurant,6806.82
 83.89,6572 [stcpay],albahir7774,2022-11-16 19:23:33,stcpay transaction,2022-11-16,2022-11,11 other,other,6890.71
 212.96,6572 [stcpay],jahez,2022-11-16 19:32:36,stcpay transaction,2022-11-16,2022-11,01 restaurant,restaurant,7103.67
@@ -1706,7 +1706,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 135.28,0228,luxury,2022-12-15 21:24:00,mada transaction,2022-12-15,2022-12,11 other,other,7782.3
 111.69,0228,luxury,2022-12-15 21:25:00,mada transaction,2022-12-15,2022-12,11 other,other,7893.99
 108.45,6572 [stcpay],zawakher alyam co,2022-12-15 23:29:23,stcpay transaction,2022-12-15,2022-12,11 other,other,8002.4400000000005
-182.59,6572 [stcpay],sender name: mohammed alnahwi,2022-12-16 00:00:00,stcpay credit,2022-12-16,2022-12,06 stcpay,stcpay,8185.030000000001
+182.59,6572 [stcpay],redacted!,2022-12-16 00:00:00,stcpay credit,2022-12-16,2022-12,06 stcpay,stcpay,8185.030000000001
 51.92,6572 [stcpay],salary,2022-12-16 15:41:10,stcpay transaction,2022-12-16,2022-12,04 petrol,petrol,8236.95
 147.62,6572 [stcpay],salary,2022-12-16 19:52:51,stcpay transaction,2022-12-16,2022-12,11 other,other,8384.57
 99.57,6572 [stcpay],zawiat alyasamin,2022-12-16 13:57:37,stcpay transaction,2022-12-16,2022-12,03 market,market,8484.14
@@ -1803,7 +1803,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 213.53,6572 [stcpay],tea strings,2023-01-17 19:11:31,stcpay transaction,2023-01-17,2023-01,11 other,other,6393.91
 217.77,6572 [stcpay],lulu saudi hypermarket ll,2023-01-18 17:38:34,stcpay transaction,2023-01-18,2023-01,03 market,market,6611.68
 119.65,6572 [stcpay],maeda zad al sultan,2023-01-18 21:17:05,stcpay transaction,2023-01-18,2023-01,01 restaurant,restaurant,6731.33
-290.76,6572 [stcpay],sender name: majed al hulayel,2023-01-18 00:00:00,stcpay credit,2023-01-18,2023-01,06 stcpay,stcpay,7022.09
+290.76,6572 [stcpay],redacted!,2023-01-18 00:00:00,stcpay credit,2023-01-18,2023-01,06 stcpay,stcpay,7022.09
 291.59,6572 [stcpay],nour al hana restaurants,2023-01-18 14:38:47,stcpay transaction,2023-01-18,2023-01,01 restaurant,restaurant,7313.68
 97.07,6572 [stcpay],nour al hana restaurants,2023-01-18 14:39:08,stcpay transaction,2023-01-18,2023-01,01 restaurant,restaurant,7410.75
 185.97,6572 [stcpay],waynes coffee,2023-01-19 08:17:03,stcpay transaction,2023-01-19,2023-01,02 coffee,coffee,7596.72
@@ -1846,7 +1846,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 290.2,5109,maeda zad al sultan,2023-01-29 21:31:00,card transaction,2023-01-29,2023-01,01 restaurant,restaurant,13981.44
 294.4,5109,al-hasawi trading est,2023-01-30 17:16:00,card transaction,2023-01-30,2023-01,11 other,other,14275.84
 213.7,5109,shay wasamsim,2023-01-30 21:52:00,card transaction,2023-01-30,2023-01,01 restaurant,restaurant,14489.539999999999
-24.24,6572 [stcpay],sender name: mohammed alnahwi,2023-01-30 00:00:00,stcpay credit,2023-01-30,2023-01,06 stcpay,stcpay,14513.78
+24.24,6572 [stcpay],redacted!,2023-01-30 00:00:00,stcpay credit,2023-01-30,2023-01,06 stcpay,stcpay,14513.78
 178.93,5109,jahez,2023-01-30 11:12:00,card transaction,2023-01-30,2023-01,01 restaurant,restaurant,14692.71
 101.01,5109,united homeware compan,2023-01-31 21:26:00,card transaction,2023-01-31,2023-01,11 other,other,14793.72
 122.0,5109,jahez,2023-01-31 21:32:00,card transaction,2023-01-31,2023-01,01 restaurant,restaurant,14915.72
@@ -1883,18 +1883,18 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 175.21,0228,salary,2023-02-27 07:18:00,mada transaction,2023-02-27,2023-02,03 market,market,2548.37
 181.78,[SNB account],إلى: علي الناصر مصرف arab national bank,2023-02-28 07:28:00,immediate transfer,2023-02-28,2023-02,08 investment,investment,2730.15
 68.33,5109,frog fad meals company,2023-02-28 14:00:00,card transaction,2023-02-28,2023-02,11 other,other,2798.48
-244.29,6572 [stcpay],sender name: mohammed bajuaifer,2023-02-28 00:00:00,stcpay credit,2023-02-28,2023-02,06 stcpay,stcpay,3042.77
-49.76,6572 [stcpay],sender name: mohanad almarhoon,2023-02-28 00:00:00,stcpay credit,2023-02-28,2023-02,06 stcpay,stcpay,3092.53
-128.16,6572 [stcpay],sender name: majed al hulayel,2023-02-28 00:00:00,stcpay credit,2023-02-28,2023-02,06 stcpay,stcpay,3220.69
-246.19,6572 [stcpay],sender name: abdulmajeed alabdulsalam,2023-02-28 00:00:00,stcpay credit,2023-02-28,2023-02,06 stcpay,stcpay,3466.88
-293.19,6572 [stcpay],sender name: hassan alahmed,2023-02-28 00:00:00,stcpay credit,2023-02-28,2023-02,06 stcpay,stcpay,3760.07
+244.29,6572 [stcpay],redacted!,2023-02-28 00:00:00,stcpay credit,2023-02-28,2023-02,06 stcpay,stcpay,3042.77
+49.76,6572 [stcpay],redacted!,2023-02-28 00:00:00,stcpay credit,2023-02-28,2023-02,06 stcpay,stcpay,3092.53
+128.16,6572 [stcpay],redacted!,2023-02-28 00:00:00,stcpay credit,2023-02-28,2023-02,06 stcpay,stcpay,3220.69
+246.19,6572 [stcpay],redacted!,2023-02-28 00:00:00,stcpay credit,2023-02-28,2023-02,06 stcpay,stcpay,3466.88
+293.19,6572 [stcpay],redacted!,2023-02-28 00:00:00,stcpay credit,2023-02-28,2023-02,06 stcpay,stcpay,3760.07
 163.15,5109,frog fad meals company,2023-02-28 14:36:00,card transaction,2023-02-28,2023-02,11 other,other,3923.2200000000003
-299.21,6572 [stcpay],sender name: raed alshehri,2023-02-28 00:00:00,stcpay credit,2023-02-28,2023-02,06 stcpay,stcpay,4222.43
+299.21,6572 [stcpay],redacted!,2023-02-28 00:00:00,stcpay credit,2023-02-28,2023-02,06 stcpay,stcpay,4222.43
 20.02,5109,al-hasawi trading est,2023-02-28 19:25:00,card transaction,2023-02-28,2023-02,11 other,other,4242.45
 158.55,account,salary,2023-03-01 09:27:00,salary,2023-03-01,2023-03,09 salary,salary,158.55
 122.83,5109,maeda zad al sultan,2023-03-01 14:45:00,card transaction,2023-03-01,2023-03,01 restaurant,restaurant,281.38
 66.27,5109,saudi hala company,2023-03-02 16:00:00,card transaction,2023-03-02,2023-03,04 petrol,petrol,347.65
-290.06,6572 [stcpay],sender name: ahmed alzabidi,2023-03-02 00:00:00,stcpay credit,2023-03-02,2023-03,06 stcpay,stcpay,637.71
+290.06,6572 [stcpay],redacted!,2023-03-02 00:00:00,stcpay credit,2023-03-02,2023-03,06 stcpay,stcpay,637.71
 296.9,5109,cake and cheese compan,2023-03-02 08:14:00,card transaction,2023-03-02,2023-03,01 restaurant,restaurant,934.61
 242.87,5109,najmat alkhairat super,2023-03-03 13:42:00,card transaction,2023-03-03,2023-03,11 other,other,1177.48
 176.15,5109,dose caffe,2023-03-03 19:05:00,card transaction,2023-03-03,2023-03,02 coffee,coffee,1353.63
@@ -1941,7 +1941,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 283.05,5109,dywanyt elrabia ltqdym,2023-03-18 17:50:00,card transaction,2023-03-18,2023-03,11 other,other,7463.54
 274.7,5109,al drees 728,2023-03-18 17:52:00,card transaction,2023-03-18,2023-03,04 petrol,petrol,7738.24
 277.24,6572 [stcpay],salary,2023-03-18 00:00:00,stcpay credit,2023-03-18,2023-03,06 stcpay,stcpay,8015.48
-110.41,6572 [stcpay],sender name: hassan alahmed,2023-03-19 00:00:00,stcpay credit,2023-03-19,2023-03,06 stcpay,stcpay,8125.89
+110.41,6572 [stcpay],redacted!,2023-03-19 00:00:00,stcpay credit,2023-03-19,2023-03,06 stcpay,stcpay,8125.89
 239.22,5109,bu kays,2023-03-19 14:31:00,card transaction,2023-03-19,2023-03,01 restaurant,restaurant,8365.11
 132.58,0228,sarah muhammad,2023-03-19 14:49:00,mada transaction,2023-03-19,2023-03,03 market,market,8497.69
 185.73,5109,al hatab bakery,2023-03-21 08:17:00,card transaction,2023-03-21,2023-03,01 restaurant,restaurant,8683.42
@@ -1990,7 +1990,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 225.54,0228,inma bank riyadh 101sa,2023-04-04 14:31:00,cash withdraw,2023-04-04,2023-04,10 cash_withdraw,cash_withdraw,423.6400000000002
 73.8,5109,shawermer,2023-04-04 00:43:00,card transaction,2023-04-04,2023-04,01 restaurant,restaurant,497.44000000000017
 208.86,0228,inma bank riyadh 101sa,2023-04-04 14:35:00,cash withdraw,2023-04-04,2023-04,10 cash_withdraw,cash_withdraw,706.3000000000002
-106.78,6572 [stcpay],from: laila alabbadi,2023-04-05 00:00:00,stcpay credit,2023-04-05,2023-04,11 other,other,813.0800000000002
+106.78,6572 [stcpay],redacted!,2023-04-05 00:00:00,stcpay credit,2023-04-05,2023-04,11 other,other,813.0800000000002
 149.74,5109,netflix.com,2023-04-05 09:34:00,internet purchase,2023-04-05,2023-04,10 bills,bills,962.8200000000002
 222.09,5109,shay duaej cafe,2023-04-08 02:40:00,card transaction,2023-04-08,2023-04,02 coffee,coffee,1184.9100000000003
 239.86,5109,salon qamar alahsa,2023-04-08 16:29:00,card transaction,2023-04-08,2023-04,11 other,other,1424.7700000000002
@@ -2003,7 +2003,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 261.98,5109,laundry angaz track fo,2023-04-10 16:28:00,card transaction,2023-04-10,2023-04,11 other,other,-9.949999999999818
 224.0,5109,salat albasaten,2023-04-11 17:22:00,card transaction,2023-04-11,2023-04,11 other,other,214.05000000000018
 287.09,0228,hataba company,2023-04-12 01:34:00,mada transaction,2023-04-12,2023-04,11 other,other,501.14000000000016
-94.27,6572 [stcpay],from: mohammed alnahwi,2023-04-12 00:00:00,stcpay credit,2023-04-12,2023-04,11 other,other,595.4100000000002
+94.27,6572 [stcpay],redacted!,2023-04-12 00:00:00,stcpay credit,2023-04-12,2023-04,11 other,other,595.4100000000002
 258.87,5109,my stc,2023-04-12 11:53:00,internet purchase,2023-04-12,2023-04,10 bills,bills,854.2800000000002
 192.02,6572 [stcpay],salary,2023-04-12 00:00:00,stcpay credit,2023-04-12,2023-04,11 other,other,1046.3000000000002
 229.85,5109,maeda zad al sultan,2023-04-12 01:38:00,card transaction,2023-04-12,2023-04,01 restaurant,restaurant,1276.15
@@ -2011,7 +2011,7 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 185.51,6572 [stcpay],salary,2023-04-13 00:00:00,stcpay credit,2023-04-13,2023-04,11 other,other,1695.1000000000001
 65.38,5109,hataba company,2023-04-13 00:42:00,card transaction,2023-04-13,2023-04,11 other,other,1760.48
 86.44,5109,hataba company,2023-04-13 01:35:00,card transaction,2023-04-13,2023-04,11 other,other,1846.92
-174.56,6572 [stcpay],from: mohammed alnahwi,2023-04-13 00:00:00,stcpay credit,2023-04-13,2023-04,11 other,other,2021.48
+174.56,6572 [stcpay],redacted!,2023-04-13 00:00:00,stcpay credit,2023-04-13,2023-04,11 other,other,2021.48
 145.29,5109,aldrees 738,2023-04-13 15:46:00,card transaction,2023-04-13,2023-04,04 petrol,petrol,2166.77
 223.21,5109,salary,2023-04-13 19:57:00,card transaction,2023-04-13,2023-04,11 other,other,2389.98
 204.9,5109,eight dimensions cafe,2023-04-13 22:17:00,card transaction,2023-04-13,2023-04,02 coffee,coffee,2594.88
@@ -2054,15 +2054,15 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 123.22,0228,sarah muhammad,2023-05-03 17:46:00,mada transaction,2023-05-03,2023-05,03 market,market,1030.42
 187.03,5109,zain,2023-05-03 17:52:00,internet purchase,2023-05-03,2023-05,10 bills,bills,1217.45
 286.28,5109,al-hasawi trading est,2023-05-03 17:11:00,card transaction,2023-05-03,2023-05,11 other,other,1503.73
-232.94,6572 [stcpay],from: mohanad almarhoon,2023-05-03 00:00:00,stcpay credit,2023-05-03,2023-05,11 other,other,1736.67
-158.41,6572 [stcpay],from: abdullah hussain,2023-05-03 00:00:00,stcpay credit,2023-05-03,2023-05,11 other,other,1895.08
-148.34,6572 [stcpay],from: majed al hulayel,2023-05-03 00:00:00,stcpay credit,2023-05-03,2023-05,11 other,other,2043.42
-187.03,6572 [stcpay],from: mohammed dawood,2023-05-03 00:00:00,stcpay credit,2023-05-03,2023-05,03 market,market,2230.45
-115.09,6572 [stcpay],from: ahmed alzabidi,2023-05-03 00:00:00,stcpay credit,2023-05-03,2023-05,11 other,other,2345.54
+232.94,6572 [stcpay],redacted!,2023-05-03 00:00:00,stcpay credit,2023-05-03,2023-05,11 other,other,1736.67
+158.41,6572 [stcpay],redacted!,2023-05-03 00:00:00,stcpay credit,2023-05-03,2023-05,11 other,other,1895.08
+148.34,6572 [stcpay],redacted!,2023-05-03 00:00:00,stcpay credit,2023-05-03,2023-05,11 other,other,2043.42
+187.03,6572 [stcpay],redacted!,2023-05-03 00:00:00,stcpay credit,2023-05-03,2023-05,03 market,market,2230.45
+115.09,6572 [stcpay],redacted!,2023-05-03 00:00:00,stcpay credit,2023-05-03,2023-05,11 other,other,2345.54
 35.23,5109,al romansiah co l t d,2023-05-03 13:16:00,card transaction,2023-05-03,2023-05,01 restaurant,restaurant,2380.77
-228.63,6572 [stcpay],from: salah eldin said elsayed,2023-05-03 00:00:00,stcpay credit,2023-05-03,2023-05,11 other,other,2609.4
+228.63,6572 [stcpay],redacted!,2023-05-03 00:00:00,stcpay credit,2023-05-03,2023-05,11 other,other,2609.4
 215.83,5109,nour al hana restauran,2023-05-04 21:13:00,card transaction,2023-05-04,2023-05,01 restaurant,restaurant,2825.23
-254.17,6572 [stcpay],from: ali alfaraj,2023-05-04 00:00:00,stcpay credit,2023-05-04,2023-05,11 other,other,3079.4
+254.17,6572 [stcpay],redacted!,2023-05-04 00:00:00,stcpay credit,2023-05-04,2023-05,11 other,other,3079.4
 25.08,0228,khalid est,2023-05-04 19:45:00,mada transaction,2023-05-04,2023-05,11 other,other,3104.48
 151.93,5109,tamwinat muhsin alyami,2023-05-04 14:44:00,card transaction,2023-05-04,2023-05,03 market,market,3256.41
 64.53,0228,sarah muhammad,2023-05-04 08:53:00,mada transaction,2023-05-04,2023-05,03 market,market,3320.94
@@ -2083,17 +2083,17 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 198.29,0228,sarah muhammad,2023-05-09 21:17:00,mada transaction,2023-05-09,2023-05,03 market,market,4905.23
 183.48,5109,rakkat co alyasamin,2023-05-09 18:42:00,card transaction,2023-05-09,2023-05,11 other,other,5088.71
 287.68,5109,s150-tamimi markets,2023-05-09 18:21:00,card transaction,2023-05-09,2023-05,03 market,market,5376.39
-205.41,6572 [stcpay],from: majed al hulayel,2023-05-09 00:00:00,stcpay credit,2023-05-09,2023-05,11 other,other,5581.8
-99.3,6572 [stcpay],from: ahmed alzabidi,2023-05-09 00:00:00,stcpay credit,2023-05-09,2023-05,11 other,other,5681.1
-71.64,6572 [stcpay],from: mohanad almarhoon,2023-05-09 00:00:00,stcpay credit,2023-05-09,2023-05,11 other,other,5752.74
+205.41,6572 [stcpay],redacted!,2023-05-09 00:00:00,stcpay credit,2023-05-09,2023-05,11 other,other,5581.8
+99.3,6572 [stcpay],redacted!,2023-05-09 00:00:00,stcpay credit,2023-05-09,2023-05,11 other,other,5681.1
+71.64,6572 [stcpay],redacted!,2023-05-09 00:00:00,stcpay credit,2023-05-09,2023-05,11 other,other,5752.74
 117.09,5109,al romansiah co l t d,2023-05-09 13:18:00,card transaction,2023-05-09,2023-05,01 restaurant,restaurant,5869.83
 244.64,5109,mama noura,2023-05-10 21:46:00,card transaction,2023-05-10,2023-05,01 restaurant,restaurant,6114.47
 284.13,5109,mama noura,2023-05-10 21:48:00,card transaction,2023-05-10,2023-05,01 restaurant,restaurant,6398.6
-96.65,6572 [stcpay],from: mohammed alnahwi,2023-05-10 00:00:00,stcpay credit,2023-05-10,2023-05,11 other,other,6495.25
+96.65,6572 [stcpay],redacted!,2023-05-10 00:00:00,stcpay credit,2023-05-10,2023-05,11 other,other,6495.25
 278.93,5109,my stc,2023-05-11 15:00:00,internet purchase,2023-05-11,2023-05,10 bills,bills,6774.18
 -1605.8000000000002,5109,salary,2023-05-11 20:57:00,salary,2023-05-11,2023-05,11 other,other,5168.379999999999
 67.47,5109,the cheese cake factor,2023-05-12 01:42:00,card transaction,2023-05-12,2023-05,01 restaurant,restaurant,5235.849999999999
-94.5,6572 [stcpay],from: mohammed alnahwi,2023-05-12 00:00:00,stcpay credit,2023-05-12,2023-05,11 other,other,5330.349999999999
+94.5,6572 [stcpay],redacted!,2023-05-12 00:00:00,stcpay credit,2023-05-12,2023-05,11 other,other,5330.349999999999
 112.15,0228,shawarmasters,2023-05-12 16:29:00,mada transaction,2023-05-12,2023-05,01 restaurant,restaurant,5442.5
 182.02,0228,sarah muhammad,2023-05-12 16:44:00,mada transaction,2023-05-12,2023-05,03 market,market,5624.5199999999995
 206.49,5109,amazon sa,2023-05-12 21:37:00,internet purchase,2023-05-12,2023-05,11 other,other,5831.009999999999
@@ -2109,18 +2109,18 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 222.46,5109,lulu saudi hypermarket,2023-05-16 21:38:00,card transaction,2023-05-16,2023-05,03 market,market,7336.07
 242.5,5109,sorat alitqan,2023-05-16 21:58:00,card transaction,2023-05-16,2023-05,11 other,other,7578.57
 74.12,5109,adel mohammed nasser s,2023-05-17 21:07:00,card transaction,2023-05-17,2023-05,11 other,other,7652.69
-148.73,6572 [stcpay],from: mohammed alnahwi,2023-05-17 00:00:00,stcpay credit,2023-05-17,2023-05,11 other,other,7801.42
+148.73,6572 [stcpay],redacted!,2023-05-17 00:00:00,stcpay credit,2023-05-17,2023-05,11 other,other,7801.42
 176.3,5109,al-hasawi trading est,2023-05-17 21:32:00,card transaction,2023-05-17,2023-05,11 other,other,7977.719999999999
 154.26,5109,shawermer,2023-05-18 18:28:00,card transaction,2023-05-18,2023-05,01 restaurant,restaurant,8131.98
 182.12,5109,salon qamar alahsa,2023-05-19 17:20:00,card transaction,2023-05-19,2023-05,11 other,other,8314.1
 165.06,0228,juice up,2023-05-19 18:08:00,mada transaction,2023-05-19,2023-05,01 restaurant,restaurant,8479.16
 186.47,5109,fahad badr al nahdi es,2023-05-20 18:03:00,card transaction,2023-05-20,2023-05,11 other,other,8665.63
-149.03,6572 [stcpay],from: majed al hulayel,2023-05-21 00:00:00,stcpay credit,2023-05-21,2023-05,11 other,other,8814.66
-144.88,6572 [stcpay],from: mohanad almarhoon,2023-05-21 00:00:00,stcpay credit,2023-05-21,2023-05,11 other,other,8959.539999999999
+149.03,6572 [stcpay],redacted!,2023-05-21 00:00:00,stcpay credit,2023-05-21,2023-05,11 other,other,8814.66
+144.88,6572 [stcpay],redacted!,2023-05-21 00:00:00,stcpay credit,2023-05-21,2023-05,11 other,other,8959.539999999999
 81.55,5109,nour al hana restauran,2023-05-21 13:56:00,card transaction,2023-05-21,2023-05,01 restaurant,restaurant,9041.09
 226.94,5109,al drees alqadisia,2023-05-22 21:54:00,card transaction,2023-05-22,2023-05,04 petrol,petrol,9268.029999999999
 243.21,5109,tariq alshiwa restaura,2023-05-22 22:34:00,card transaction,2023-05-22,2023-05,01 restaurant,restaurant,9511.24
-168.85,6572 [stcpay],from: mohammed alnahwi,2023-05-22 00:00:00,stcpay credit,2023-05-22,2023-05,11 other,other,9680.09
+168.85,6572 [stcpay],redacted!,2023-05-22 00:00:00,stcpay credit,2023-05-22,2023-05,11 other,other,9680.09
 296.46,0228,sarah muhammad,2023-05-22 22:51:00,mada transaction,2023-05-22,2023-05,03 market,market,9976.55
 114.0,5109,thmarat altghthiya for,2023-05-23 13:14:00,card transaction,2023-05-23,2023-05,03 market,market,10090.55
 133.23,5109,jahez,2023-05-23 19:24:00,card transaction,2023-05-23,2023-05,01 restaurant,restaurant,10223.779999999999
@@ -2128,17 +2128,17 @@ amount,card,Description,datetime,transaction type,date,YM,category,category_n,cu
 119.93,0228,luxury,2023-05-25 19:44:00,mada transaction,2023-05-25,2023-05,11 other,other,10543.199999999999
 159.23,5109,brand discount co,2023-05-25 21:52:00,card transaction,2023-05-25,2023-05,11 other,other,10702.43
 176.27,5109,uskudar,2023-05-25 23:31:00,card transaction,2023-05-25,2023-05,11 other,other,10878.699999999999
-76.08,6572 [stcpay],from: mohammed alnahwi,2023-05-25 00:00:00,stcpay credit,2023-05-25,2023-05,11 other,other,10954.779999999999
+76.08,6572 [stcpay],redacted!,2023-05-25 00:00:00,stcpay credit,2023-05-25,2023-05,11 other,other,10954.779999999999
 171.9,5109,mawhob est for serving,2023-05-26 21:44:00,card transaction,2023-05-26,2023-05,11 other,other,11126.68
 285.49,0228,sarah muhammad,2023-05-26 20:22:00,mada transaction,2023-05-26,2023-05,03 market,market,11412.17
 56.2,5109,tasty tais company,2023-05-26 16:04:00,card transaction,2023-05-26,2023-05,01 restaurant,restaurant,11468.369999999999
 213.77,0228,sarah muhammad,2023-05-26 10:14:00,mada transaction,2023-05-26,2023-05,03 market,market,11682.14
 167.04,0228,abyan capital,2023-05-27 05:46:00,mada transaction,2023-05-27,2023-05,08 investment,investment,11849.18
 160.34,0228,fawal othman,2023-05-27 09:37:00,mada transaction,2023-05-27,2023-05,01 restaurant,restaurant,12009.52
-40.91,6572 [stcpay],from: mohammed alnahwi,2023-05-27 00:00:00,stcpay credit,2023-05-27,2023-05,11 other,other,12050.43
+40.91,6572 [stcpay],redacted!,2023-05-27 00:00:00,stcpay credit,2023-05-27,2023-05,11 other,other,12050.43
 125.34,0228,altays allathet,2023-05-27 17:17:00,mada transaction,2023-05-27,2023-05,01 restaurant,restaurant,12175.77
 176.64,0228,sarah muhammad,2023-05-27 17:26:00,mada transaction,2023-05-27,2023-05,03 market,market,12352.41
-131.76,6572 [stcpay],from: mohammed alnahwi,2023-05-27 00:00:00,stcpay credit,2023-05-27,2023-05,11 other,other,12484.17
+131.76,6572 [stcpay],redacted!,2023-05-27 00:00:00,stcpay credit,2023-05-27,2023-05,11 other,other,12484.17
 136.3,account,salary,2023-05-28 02:49:00,salary,2023-05-28,2023-05,09 salary,salary,12620.47
 98.25,5109,aldrees 738,2023-05-28 09:03:00,card transaction,2023-05-28,2023-05,04 petrol,petrol,12718.72
 158.38,5109,thmarat altghthiya for,2023-05-28 13:35:00,card transaction,2023-05-28,2023-05,03 market,market,12877.1
