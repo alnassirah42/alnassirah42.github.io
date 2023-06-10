@@ -1,4 +1,3 @@
-
 var padding = 3;
 // var color = d3.scale.category10();
 	
@@ -481,5 +480,4 @@ function moveTowardEraCenter(alpha){
 	  };
 	}
 //
-
 
