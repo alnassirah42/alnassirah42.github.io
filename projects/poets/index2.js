@@ -129,14 +129,17 @@ d3.csv('aldiwan_short.csv',function(data){
     df = data
      var tooltip = d3.select("body")
                     .append("div")
+                    .attr("class","tooltip")
                     .style('text-align','right')
-                    .attr('background-color','black')
+                    .style('background-color','rgb(219, 219, 225,0.5)')
                     .style("position", "absolute")
                     .style("z-index", "10")
                     .style("visibility", "hidden")
-    
-     
-    var poet_page = d3.select("body")
+                    .style('border-radius','20px')
+                    .style("margin","20px")
+                    .style("padding","10px")
+
+       var poet_page = d3.select("body")
                     .append("div")
                     .attr('class','poet_page')
                     .style('background','rgba(135,62,35,0.8)')
