@@ -14,13 +14,19 @@
       src="https://kit.fontawesome.com/fa62c117c7.js"
       crossorigin="anonymous"
     ></script>
+    <script
+        src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+        crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="styles.css" />
     <title>Ali AlNasser</title>
+    <script type=module src='assets.js'></script>
   </head>
   <body class="light" id="top">
     <header class="header center">
       <h3>
-        <!-- <a href="https://www.linkedin.com/in/alialnasser/" class="link"></a> -->
+        <a href="https://www.linkedin.com/in/alialnasser/" class="link"></a>
       </h3>
 
       <nav class="nav center">
@@ -84,6 +90,7 @@
       </div>
 
       <!-- Projects -->
+
       <section id="projects" class="section projects">
         <h2 class="section__title">Projects</h2>
 
@@ -248,6 +255,13 @@
           </div>
 
         </div>
+        <script>
+            $(".project").click(function(e) {
+                console.log(e)
+                window.location = this.getElementsByTagName('a')[0].href;
+            });
+        </script>
+
 
       </section>
 
