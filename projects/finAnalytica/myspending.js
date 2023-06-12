@@ -1,3 +1,34 @@
+// selecting tabs: 
+
+var tabButtons = document.querySelectorAll(".tab-container .tab-buttons button")
+var tabPanels = document.querySelectorAll(".tab-container .panel")
+
+var panel_index = 0
+function showAllPanel(){
+    tabButtons.forEach(function(node){
+        node.style.backgroundColor="";
+        node.style.color="";
+    });
+    
+    tabPanels.forEach(function(node){
+        node.style.display="block";
+    });
+
+}
+
+
+function showPanel(p_index){
+    panel_index = p_index;
+    tabPanels.forEach(function(node){
+        node.style.display="none";
+    });
+    tabPanels[panel_index].style.display= "block"
+    tabPanels[panel_index].style.backgroundColor= "#eee"
+}
+
+
+
+
 var dft,yms;
 var YM; 
 var category = 'all';
@@ -53,6 +84,7 @@ function makeplot() {
 };
   
 function processData(YM,category,credit,sort) {
+    showAllPanel()
     // dft = data
     df_month_wsal = dft 
     if (YM !='all'){
@@ -74,13 +106,20 @@ function processData(YM,category,credit,sort) {
     }
     df = d3.rollup(df_month,v=>d3.sum(v,d=>d.amount),d=>d.date)
     df = [...df].map(function(d){return {date:d[0],amount:d[1]}})
-    layout = {margin: {
-        l: 100,
-        r: 10,
-        b: 1,
-        t: 10,
+    layout = {
+
+        margin: {
+            l: 100,
+            r: 10,
+            b: 40,
+            t: 10,
         },
-        show_legend:true
+        paper_bgcolor : '#eee',
+        plot_bgcolor : '#eee',
+        show_legend:true,
+        font: {
+            size: 20
+        }
     }
 
     var x = [], y = [];
@@ -117,6 +156,7 @@ function processData(YM,category,credit,sort) {
     makeTable(df_month,sort);
     makeSummary(df_month);
     sankeyChart(df_month_wsal)
+    showPanel(panel_index)
 }
 
 function plotLine(x, y, id,layout,YM){
@@ -166,26 +206,29 @@ var data = [{
     values: [["<b>date</b>"], ["<b>description</b>"],
 			 ["<b>category</b>"], ["<b>transaction_type</b>"], 
              ["<b>amount</b>"],["<b>running_total</b>"]],
-    align: "center",
+    align: "left",
     line: {width: 1, color: 'black'},
     fill: {color: "grey"},
-    font: {family: "Arial", size: 12, color: "white"}
+    font: {family: "Arial", size: 20, color: "white"}
   },
   cells: {
     values: values,
     align: "left",
     line: {color: "black", width: 1},
-    font: {family: "Arial", size: 11, color: ["black"]}
+    font: {family: "Arial", size: 20, color: ["black"]},
+    height: 40,
+    
   }
 }]
  style_table={
+     hoverlabel: { bgcolor: "salmon" },
      'overflowY': 'scroll',
      margin: {
         l: 0,
         r: 0,
         b: 0,
         t: 0
-    }
+    },
  },
 Plotly.newPlot('tableDiv', data,style_table);
 };
@@ -206,11 +249,17 @@ function makeBar(df){
         return trace
     })
     layout = {margin: {
-        l: 50,
+        l: 60,
         r: 10,
-        b: 1,
+        b: 40,
         t: 10,
+    },
+        font: {
+            size: 20
         },
+
+        // paper_bg_color:"#eee",
+        // plot_bgcolor: '#c7c7c7',
         show_legend:true,
         xaxis : {
             visible : false,
@@ -220,8 +269,10 @@ function makeBar(df){
     Plotly.newPlot('barChart',df3,layout)
 }
 
+
 function makeSummary(df){
     f = v=>d3.sum(v,d=>d[value])
+
     summary = prepareData(df,key='category_n',value='amount',f)
     f = v=>v.length
     summary_num = prepareData(df,key='category_n',value='amount',f)
@@ -231,7 +282,7 @@ function makeSummary(df){
         summary[i]['transactions'] = summary_num[i]['amount']
         summary[i]['avg. ticket'] = summary[i]['amount']/summary[i]['transactions']
     }
-    sum = d3.sum(summary.map(d=>d.amount))
+    sum = d3.sum(d3.filter(summary,d=>d.category !='salary').map(d=>d.amount))
     txn_sum = d3.sum(summary.map(d=>d.transactions))
 
     summary.push({category_n:'total',
@@ -260,13 +311,15 @@ var data = [{
     align: "left",
     line: {width: 1, color: 'black'},
     fill: {color: "grey"},
-    font: {family: "Arial", size: 12, color: "white"}
+    font: {family: "Arial", size: 22, color: "white"}
   },
   cells: {
     values: values,
     align: "left",
     line: {color: "black", width: 1},
-    font: {family: "Arial", size: 11, color: ["black"]}
+    font: {family: "Arial", size: 20, color: ["black"]},
+    height: 40,
+    
   }
 }]
  style_table={
@@ -366,17 +419,19 @@ function sankeyChart(df){
     var data = [data]
 
     var layout = {
-      title: "Sankey chart",
-      font: {
-        size: 10
-      },
-      margin: {
-        l: 50,
-        r: 50,
-        b: 10,
-        t: 50,
+        // autosize=false,
+        // width = "100%",
+        // height = "100%",
+        title: "Sankey chart",
+        font: {
+            size: 20
         },
-
+        margin: {
+            l: 50,
+            r: 50,
+            b: 10,
+            t: 50,
+        },
     }
 
     Plotly.react('sankeyChart', data, layout)
