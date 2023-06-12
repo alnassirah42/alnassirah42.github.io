@@ -7,19 +7,34 @@
 </head>
 
 <body>
-
-    <div class="grid-container">
-        <div class="buttons" id="year-month"></div>
-        <!-- <div class="buttons" id="sorts"></div> -->
-        <div class="buttons" id="categories"></div>
-        <div id="lineChart">
-          <!-- Plotly chart will be drawn inside this DIV -->
+    <div class="container">
+        <div class="grid-container">
+            <div class="buttons" id="year-month"></div>
+            <!-- <div class="buttons" id="sorts"></div> -->
+            <div class="buttons" id="categories"></div>
         </div>
-        <div id="pieChart"></div>
-        <div id="tableDiv"></div> 
-        <div id="summaryDiv"></div> 
-        <div id="barChart"></div> 
-        <div id="sankeyChart"></div> 
+        <div class="tab-container">
+            <div class ="tab-buttons">
+                <button onclick ="showPanel(0)">Monthly overview</button>
+                <button onclick ="showPanel(1)">Table view</button>
+                <button onclick ="showPanel(2)"> Flow </button>
+            </div>
+            <div class="panel" id="monthly-overview">
+                <div id="lineChart"></div>
+                  <!-- Plotly chart will be drawn inside this DIV -->
+                <div id="pieChart"></div>
+                </div>
+
+            <div class= "panel" id="tables">
+                <div id="tableDiv"></div> 
+                <div id="summaryDiv"></div> 
+            </div>
+
+            <div class = "panel" id="flow">
+                <div id="barChart"></div> 
+                <div id="sankeyChart"></div> 
+            </div>
+        </div>
     </div>
   <script src="./myspending.js"></script>
 </body>
