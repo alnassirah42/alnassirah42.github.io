@@ -1,5 +1,39 @@
+// selecting tabs: 
+
+var tabButtons = document.querySelectorAll(".tab-container .tab-buttons button")
+var tabPanels = document.querySelectorAll(".tab-container .panel")
+
+var panel_index = 0
+function showAllPanel(){
+    tabButtons.forEach(function(node){
+        node.style.backgroundColor="";
+        node.style.color="";
+    });
+    
+    tabPanels.forEach(function(node){
+        node.style.display="block";
+    });
+
+}
+
+
+function showPanel(p_index){
+    panel_index = p_index;
+    tabPanels.forEach(function(node){
+        node.style.display="none";
+    });
+    tabPanels[panel_index].style.display= "block"
+    // tabPanels[panel_index].style.backgroundColor= "#eee"
+}
+
+
+
+
+var year = "all"
+var month = "all";
 var dft,yms;
-var YM; 
+
+var YM = 'all'; 
 var category = 'all';
 var credit = 'all';
 const credit_d = {'credit':-1,
@@ -34,7 +68,7 @@ function makeplot() {
           makeCreditDebitButtons()
           yms = [... new Set(dft.map(d=>d.YM))]
           yms = d3.sort(yms,(a,b)=>d3.ascending(a,b))
-          YM = yms[yms.length -1]
+          YM = "all"
           yms.push('all')
           makeYMButtons(yms)
 
@@ -53,10 +87,18 @@ function makeplot() {
 };
   
 function processData(YM,category,credit,sort) {
+    showAllPanel()
     // dft = data
     df_month_wsal = dft 
     if (YM !='all'){
-        df_month_wsal = d3.filter(dft,d=>d.YM == YM)  
+        s_year = YM.split('-')[0]
+        s_month = YM.split('-')[1]
+        if (s_year !='all'){
+            df_month_wsal = d3.filter(dft,d=>d.YM.split('-')[0] == s_year)
+        }
+        if (s_month !='all'){
+            df_month_wsal = d3.filter(df_month_wsal,d=>d.YM.split('-')[1] == s_month)
+        }
     }
     df_month = df_month_wsal//d3.filter(df_month_wsal,d=>d["transaction_type"] != 'salary')  
     if (category !='all'){
@@ -74,15 +116,28 @@ function processData(YM,category,credit,sort) {
     }
     df = d3.rollup(df_month,v=>d3.sum(v,d=>d.amount),d=>d.date)
     df = [...df].map(function(d){return {date:d[0],amount:d[1]}})
-    layout = {margin: {
-        l: 100,
-        r: 10,
-        b: 1,
-        t: 10,
-        },
-        show_legend:true
-    }
+    layout = {
 
+        margin: {
+            // l: 100,
+            // r: 10,
+            // b: 40,
+            // t: 10,
+            l: 5,
+            r: 35,
+            b: 80,
+            t: 20,
+
+        },
+        paper_bgcolor : '#23283e',
+        plot_bgcolor : '#23283e',
+        show_legend:true,
+        font: {
+            size: 12,
+            color: "#ffffff",
+        }
+    }
+    
     var x = [], y = [];
     var cumsum = 0; 
     for (var i=0; i<df.length; i++) {
@@ -93,7 +148,7 @@ function processData(YM,category,credit,sort) {
         y.push(cumsum );
     }
 
-    plotLine( x, y,"lineChart",layout,YM);
+    plotLine( x, y,"lineChart",YM);
     
     // pie chart 
     f = v=>d3.sum(v,d=>d[value])
@@ -117,18 +172,59 @@ function processData(YM,category,credit,sort) {
     makeTable(df_month,sort);
     makeSummary(df_month);
     sankeyChart(df_month_wsal)
+    showPanel(panel_index)
 }
 
-function plotLine(x, y, id,layout,YM){
+function plotLine(x, y, id,YM){
+    var layout = {
+        title: 'spending over '+ YM,
+        margin: {
+            l: 40,
+            r: 30,
+            b: 50,
+            t: 50,
+        },
+        xaxis: {
+            showgrid: true,
+            zeroline: true,
+            // tickcolor: "rgba(256,256,256,0.5)",
+            // tickwidth: 40,
+            gridcolor: "rgba(256,256,256,0.1)",
+            // gridwidth: 15,
+
+        },
+        yaxis: {
+            showline: true,
+            tickcolor: "rgba(256,256,256,0.5)",
+            tickwidth: 15,
+            gridcolor: "rgba(256,256,256,0.1)",
+            // gridwidth: 15,
+
+        },
+        name: 'spending',
+
+        paper_bgcolor : '#23283e',
+        plot_bgcolor : '#23283e',
+        show_legend:true,
+        font: {
+            size: 12,
+            color: "#ffffff",
+        },
+    }
     var plotDiv = document.getElementById("plot");
+
     var traces = [{
         x: x, 
         y: y,
-        type: 'scatter'
+        type: 'scatter',
+        line: {
+            color: 'rgb(256,256,256)',
+            width: 2.5,
+        },
+
     }];
 
-    Plotly.newPlot(id, traces, 
-        {title: 'spending over '+ YM},layout);
+    Plotly.newPlot(id, traces ,layout);
 
 };
 function prepareData(df,key,value,f){
@@ -151,9 +247,11 @@ function makeTable(df,sort){
     }else{
     df = d3.sort(df,(a,b)=>d3.descending(a[sort_d[sort]],b[sort_d[sort]]))
     }
+    const top10 = (d)=> d.length < 10 ? d: d.slice(0,10)+'...'
+
     var values = [
         df.map(d=>d['date']),
-        df.map(d=>d['description']),
+        df.map(d=>top10(d['description'])),
         df.map(d=>d['category_n']),
         df.map(d=>d['transaction_type']),
         df.map(d=>d['amount'].toFixed(2)),
@@ -166,26 +264,36 @@ var data = [{
     values: [["<b>date</b>"], ["<b>description</b>"],
 			 ["<b>category</b>"], ["<b>transaction_type</b>"], 
              ["<b>amount</b>"],["<b>running_total</b>"]],
-    align: "center",
-    line: {width: 1, color: 'black'},
-    fill: {color: "grey"},
-    font: {family: "Arial", size: 12, color: "white"}
+    align: "left",
+    line: {width: 1, color: 'white'},
+    fill: {color: "#90a0d9"},
+    font: {family: "Arial", size: 10, color: "black"}
   },
   cells: {
-    values: values,
-    align: "left",
-    line: {color: "black", width: 1},
-    font: {family: "Arial", size: 11, color: ["black"]}
-  }
+      values: values,
+      align: "left",
+      line: {color: "white", width: 1},
+      font: {family: "Arial", size: 8, color: ["white"]},
+      height: 20,
+      margin:{
+          l:0,
+      },
+      fill : {color : '#23283f',},
+    
+  },
 }]
  style_table={
+     hoverlabel: { bgcolor: "salmon" },
      'overflowY': 'scroll',
      margin: {
-        l: 0,
-        r: 0,
-        b: 0,
-        t: 0
-    }
+        l: 1,
+        r: 1,
+        b: 1,
+        t: 1,
+    },
+    paper_bgcolor : '#23283e',
+    plot_bgcolor : '#23283e',
+
  },
 Plotly.newPlot('tableDiv', data,style_table);
 };
@@ -206,22 +314,33 @@ function makeBar(df){
         return trace
     })
     layout = {margin: {
-        l: 50,
+        l: 30,
         r: 10,
-        b: 1,
+        b: 40,
         t: 10,
+    },
+        font: {
+            size: 10,
+            color: "#ffffff"
         },
+
+        // paper_bg_color:"#eee",
+        // plot_bgcolor: '#c7c7c7',
         show_legend:true,
         xaxis : {
             visible : false,
-        }
+        },
+        paper_bgcolor : '#23283e',
+        plot_bgcolor : '#23283e',
 
     }
     Plotly.newPlot('barChart',df3,layout)
 }
 
+
 function makeSummary(df){
     f = v=>d3.sum(v,d=>d[value])
+
     summary = prepareData(df,key='category_n',value='amount',f)
     f = v=>v.length
     summary_num = prepareData(df,key='category_n',value='amount',f)
@@ -231,7 +350,7 @@ function makeSummary(df){
         summary[i]['transactions'] = summary_num[i]['amount']
         summary[i]['avg. ticket'] = summary[i]['amount']/summary[i]['transactions']
     }
-    sum = d3.sum(summary.map(d=>d.amount))
+    sum = d3.sum(d3.filter(summary,d=>d.category !='salary').map(d=>d.amount))
     txn_sum = d3.sum(summary.map(d=>d.transactions))
 
     summary.push({category_n:'total',
@@ -254,29 +373,34 @@ var data = [{
     values: [["<b>category</b>"],
              ["<b>amount</b>"],
              ["<b>transactions</b>"],
-             ["<b>avg. ticket</b>"],
+             ["<b>average</b>"],
              ["<b>pct</b>"],
             ],
     align: "left",
-    line: {width: 1, color: 'black'},
-    fill: {color: "grey"},
-    font: {family: "Arial", size: 12, color: "white"}
+    line: {width: 1, color: 'white'},
+    fill: {color: "#90a0d9"},
+    font: {family: "Arial", size: 10, color: "black"},
+    height: 15,
   },
   cells: {
     values: values,
     align: "left",
-    line: {color: "black", width: 1},
-    font: {family: "Arial", size: 11, color: ["black"]}
+    line: {color: "white", width: 1},
+    font: {family: "Arial", size: 10, color: ["white"]},
+    height: 20,
+    fill : {color : '#23283f',},
   }
 }]
  style_table={
      'overflowY': 'scroll',
      margin: {
-        l: 0,
-        r: 0,
-        b: 0,
-        t: 0
-    }
+        l: 1,
+        r: 1,
+        b: 1,
+        t: 1
+    },
+    paper_bgcolor : '#23283e',
+    plot_bgcolor : '#23283e',
  },
 Plotly.newPlot('summaryDiv', data,style_table);
 
@@ -366,16 +490,21 @@ function sankeyChart(df){
     var data = [data]
 
     var layout = {
-      title: "Sankey chart",
-      font: {
-        size: 10
-      },
-      margin: {
-        l: 50,
-        r: 50,
-        b: 10,
-        t: 50,
+        // autosize=false,
+        // width = "100%",
+        // height = "100%",
+        title: "Sankey chart",
+        font: {
+            size: 10
         },
+        margin: {
+            l: 20,
+            r: 20,
+            b: 10,
+            t: 50,
+        },
+        paper_bgcolor : '#23283e',
+        plot_bgcolor : '#23283e',
 
     }
 
@@ -385,22 +514,52 @@ function sankeyChart(df){
 const buttons = d3.select("#year-month")
 
 const categories = d3.select("#categories")
-const credit_debit = d3.select("#year-month")
-const sorts = d3.select("#year-month")
+const credit_debit = d3.select("#credit-debit")
+const sorts = d3.select("#sort-table")
 
 
 function makeYMButtons(yms) {
+    years = [... new Set(d3.map(yms.slice(0,yms.length-1),d=>d.slice(0,4)))]
+    years = [...['all'],...years]
+    months = [... new Set(d3.map(yms.slice(0,yms.length-1),d=>d.slice(5,7)))]
+    months = d3.sort(months)
+    months = [...['all'],...months]
     buttons
-        .selectAll('input#ym')
-        .data(yms)
+        .append("select")
+        .attr("class","select-year")
+        .attr("id","years")
+        .selectAll("input.year")
+        .data(years)
         .enter()
-        .append('input')
-        .attr('id','select-month')
+        .append('option')
+        .attr('id','select-year')
         .attr('class','button')
         .attr('type','button')
         .attr('value',d=>d)
+        .style("color","white")
         .text(d=>d)
-        .on('click',changeYM)
+
+        d3.select(".select-year")
+          .on('change',changeYear)
+
+    buttons
+        .append("select")
+        .attr("class","select-month")
+        .attr("id","years")
+        .selectAll("input.year")
+        .data(months)
+        .enter()
+        .append('option')
+        .attr('id','select-year')
+        .attr('class','button')
+        .attr('type','button')
+        .attr('value',d=>d)
+        .style("color","white")
+        .text(d=>d)
+
+        d3.select(".select-month")
+          .on('change',changeMonth)
+
 }
 function makeCatButtons(cats) {
     categories
@@ -411,6 +570,7 @@ function makeCatButtons(cats) {
         .attr('id','select-category')
         .attr('class','button')
         .style('background-color',d=>category_colors(d))
+        .style('color',"black")
         .attr('type','button')
         .attr('value',d=>d)
         .text(d=>d)
@@ -418,18 +578,36 @@ function makeCatButtons(cats) {
 }
 
 function makeCreditDebitButtons(){
-    credit_debit
-        .selectAll('input#credit-debit')
-        .data(['credit','debit','all'])
+    credit_debit.append('select')
+        .attr('class','credit-debit-s')
+        .selectAll(".crdb")
+        .data(['all','credit','debit'])
         .enter()
-        .append('input')
-        .attr('id','credit_debit')
-        .attr('class','button')
-        .attr('type','button')
+        .append('option')
+        .attr('id','txn-type')
+        .attr('class','txn-type')
         .attr('value',d=>d)
         .text(d=>d)
-        .on('click',selectCreditDebit)
 
+        d3.select(".credit-debit-s")
+          .on('change',selectCreditDebit)
+
+}
+function changeMonth(){
+    month = this.value;
+    YM = year + '-' + month;
+    if (YM == 'all-all'){
+        YM = 'all';
+    }
+    processData(YM,category,credit,sort)
+}
+function changeYear(){
+    year = this.value;
+    YM = year + '-' + month;
+    if (YM == 'all-all'){
+        YM = 'all';
+    }
+    processData(YM,category,credit,sort)
 }
 function changeYM(){
     YM = this.value
