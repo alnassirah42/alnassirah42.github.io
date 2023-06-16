@@ -11,15 +11,52 @@
   <!-- Plotly.js -->
    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js" ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+        crossorigin="anonymous"></script>
+ 
    <link rel="stylesheet" href="myspending.css">
-    
 </head>
 
 <body>
+    <!-- <header class="header center"> -->
+    <!--    -->
+    <!---->
+    <!--   <nav class="nav center"> -->
+    <!--     <ul class="center"> -->
+    <!--       <li class="nav__list-item"> -->
+    <!--         <a class="link link--nav" href="../../">Home</a> -->
+    <!--       </li> -->
+    <!--     </ul> -->
+    <!---->
+    <!--      -->
+    <!--   </nav> -->
+    <!-- </header> -->
+
+
+    <main>
     <div class="container">
         <div class="grid-container">
-            <div class="buttons" id="year-month"></div>
-            <!-- <div class="buttons" id="sorts"></div> -->
+            <div class="button-grid" id="selector-buttons">
+                <div class="buttons" id="credit-debit"></div>
+                <div class="buttons" id="year-month"></div>
+                <div class="buttons" id="sort-table"></div>
+            </div>
             <div class="buttons" id="categories"></div>
         </div>
         <div class="tab-container">
@@ -46,5 +83,7 @@
         </div>
     </div>
   <script src="./myspending.js"></script>
+  </main>
+  <!-- <script src="../../script.js"></script> -->
 </body>
 
