@@ -411,7 +411,6 @@ d3.csv('PIF_comps_test5.csv',function(c_data){
 
 // Load data and let's do it.
 d3.csv("PIF_employee_test5.csv", function(error, data) {	
-    console.log(data)
 	data.forEach(function(d) {
 		var day_array = d.moveto.split(",");
 		var activities = [];
