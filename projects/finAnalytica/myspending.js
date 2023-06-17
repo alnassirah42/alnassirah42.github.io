@@ -8,9 +8,6 @@ function showAllPanel(){
     tabButtons.forEach(function(node){
         node.style.backgroundColor="";
         node.style.color="";
-        console.log(node.classList)
-        node.classList.remove("focus");
-        console.log(node.classList)
     });
     
     tabPanels.forEach(function(node){
