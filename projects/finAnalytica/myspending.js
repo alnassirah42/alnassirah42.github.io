@@ -8,6 +8,9 @@ function showAllPanel(){
     tabButtons.forEach(function(node){
         node.style.backgroundColor="";
         node.style.color="";
+        console.log(node.classList)
+        node.classList.remove("focus");
+        console.log(node.classList)
     });
     
     tabPanels.forEach(function(node){
@@ -22,10 +25,15 @@ $("#filter-input").on("keyup",filterTable)
 
 function showPanel(p_index){
     panel_index = p_index;
+    
+    tabButtons.forEach(function(node){
+        node.classList.remove("focus");
+    });
+    
     tabPanels.forEach(function(node){
         node.style.display="none";
     });
-    tabButtons[panel_index].focus();
+    tabButtons[panel_index].setAttribute("class","focus");
     tabPanels[panel_index].style.display= "block"
     // tabPanels[panel_index].style.backgroundColor= "#eee"
 }
@@ -54,6 +62,9 @@ function makeplot() {
           amount = Math.random()*400;
           if (d['transaction type'] == 'salary'){
             amount = -60*amount;
+          }
+          if (d['transaction type'] == 'stcpay credit'){
+            amount = -amount;
           }
           return {
             date: d.date,
@@ -622,10 +633,10 @@ const sorts = d3.select("#sort-table")
 
 function makeYMButtons(yms) {
     years = [... new Set(d3.map(yms.slice(0,yms.length-1),d=>d.slice(0,4)))]
-    years = [...['all'],...years]
+    years = [...['year','all'],...years]
     months = [... new Set(d3.map(yms.slice(0,yms.length-1),d=>d.slice(5,7)))]
     months = d3.sort(months)
-    months = [...['all'],...months]
+    months = [...['month','all'],...months]
     buttons
         .append("select")
         .attr("class","select-year")
@@ -639,7 +650,15 @@ function makeYMButtons(yms) {
         .attr('type','button')
         .attr('value',d=>d)
         .style("color","white")
+        // .property("selected", d=> d)
         .text(d=>d)
+        .each(function(d) {
+            if (d === "year") {
+                d3.select(this).property("disabled", true)
+                d3.select(this).style("display", "none")
+            }
+        });
+
 
         d3.select(".select-year")
           .on('change',changeYear)
@@ -658,6 +677,12 @@ function makeYMButtons(yms) {
         .attr('value',d=>d)
         .style("color","white")
         .text(d=>d)
+        .each(function(d) {
+            if (d === "month") {
+                d3.select(this).property("disabled", true)
+                d3.select(this).style("display", "none")
+            }
+        });
 
         d3.select(".select-month")
           .on('change',changeMonth)
@@ -734,13 +759,19 @@ function makeSortDropDown(){
     sorts.append('select')
         .attr('class','sort')
         .selectAll(".sort")
-        .data(['chronological','descending'])
+        .data(['sort','chronological','descending'])
         .enter()
         .append('option')
         .attr('id','sort')
         .attr('class','sort')
         .attr('value',d=>d)
         .text(d=>d)
+        .each(function(d) {
+            if (d === "sort") {
+                d3.select(this).property("disabled", true)
+                d3.select(this).style("display", "none")
+            }
+        });
 
         d3.select(".sort")
           .on('change',selectSort)
@@ -764,11 +795,18 @@ makeplot();
 // to fix window resizing 
 //
 $(window).resize(function(){
-    var update = {
-        width: $("#tableDiv").width(),
-        height: $("#tableDiv").height(),
+    if (panel_index == 1){
+        var update = {
+            width: $("#tableDiv").width(),
+            height: $("#tableDiv").height(),
+        }
+        Plotly.relayout("tableDiv",update)
+        var update = {
+            width: $("#summaryDiv").width(),
+            height: $("#summaryDiv").height(),
+        }
+        Plotly.relayout("summaryDiv",update)
     }
-    Plotly.relayout("tableDiv",update)
 });
 
 
@@ -802,14 +840,10 @@ function handleTouchMove(evt) {
                                                                          
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
         if ( xDiff > 0 ) {
-            console.log("swipe right")
             panel_index = Math.min(2,panel_index+1)
-            console.log(panel_index)
             showPanel(panel_index)
         } else {
-            console.log("swipe left")
             panel_index = Math.max(0,panel_index-1)
-            console.log(panel_index)
             showPanel(panel_index)
         }                       
     }    

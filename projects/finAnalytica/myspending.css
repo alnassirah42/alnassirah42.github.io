@@ -350,7 +350,7 @@ main {
     height: 23%;
     margin: 5px 0 5px 0 ;
     display: grid;
-    grid-template-columns: 1.1fr 1.9fr;
+    grid-template-columns: 1fr 2fr;
     background-color: var(--clr-bg-alt);
     border-radius: 10px;
     }
@@ -403,12 +403,18 @@ main {
     font-size: 12px;
 }
 
-button:hover{
+/* button:hover{ */
+/*     background-color:var(--clr-primary); */
+/* } */
+/* button:focus{ */
+/*     background-color:var(--clr-primary); */
+/* } */
+
+button.focus{
     background-color:var(--clr-primary);
 }
-button:focus{
-    background-color:var(--clr-primary);
-}
+
+
  .panel {
      height: 85%;
      font-size: 30px;
@@ -499,7 +505,7 @@ button:focus{
       color: #fff;
       box-shadow: var(--shadow);
  }
- .button:focus{
-    background-color:lightblue
- }
+ /* .button:focus{ */
+ /*    background-color:lightblue */
+ /* } */
 
