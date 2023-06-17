@@ -108,7 +108,38 @@ function makeplot() {
           processData(YM,category,credit,sort) } );
 
 };
-  
+
+function writeSummary(){
+
+    monthly_p = $("#monthly-overview > .summary")
+
+    max_amount_in_a_day = d3.sort(df,(a,b)=>d3.descending(a.amount,b.amount))
+    max_amount_in_a_day = max_amount_in_a_day[0].amount.toFixed(2)
+
+    monthly_p.text(`maximum amount spent in a day is ${max_amount_in_a_day}`)
+
+
+    table_p = $("#tables > .summary")
+    total_spent = d3.sum(d3.filter(df_month,d=>d.transaction_type!="salary"),d=>d.amount)
+    total_spent = total_spent.toFixed(2)
+    total_transactions = d3.sum(d3.filter(df_month,d=>d.transaction_type!="salary"),d=>1)
+    table_p.text(`spent ${total_spent} in ${total_transactions} transactions`)
+
+    flow_p = $("#flow > .summary")
+    total_income = -d3.sum(d3.filter(df_month,d=>d.amount<0),d=>d.amount)
+    total_income = total_income.toFixed(2)
+    
+    total_spent = d3.sum(d3.filter(df_month,d=>d.amount>0),d=>d.amount)
+    total_spent = total_spent.toFixed(2)
+
+    total_saved = total_income - total_spent;
+    total_saved = total_saved.toFixed(2)
+    // total_transactions = d3.sum(d3.filter(df_month,d=>d.transaction_type!="salary"),d=>1)
+
+    flow_p.text(`total incoming ${total_income} total spent ${total_spent} total saved ${total_saved}`)
+
+}
+
 function processData(YM,category,credit,sort) {
     showAllPanel()
     // dft = data
@@ -195,6 +226,8 @@ function processData(YM,category,credit,sort) {
     makeSummary(df_month);
     sankeyChart(df_month_wsal)
     showPanel(panel_index)
+
+    writeSummary()
 }
 
 function plotLine(x, y, id,YM){

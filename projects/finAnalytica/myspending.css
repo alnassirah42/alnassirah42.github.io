@@ -421,7 +421,7 @@ button.focus{
      border: none;
      /* border: solid 1px black; */
      /* gap: 10px; */
-     grid-template-rows: 1fr 1fr ;
+     grid-template-rows: 0.2fr 1fr 1fr ;
 
      /* border-radius: 10px; */
      /* padding: 10px; */
@@ -437,7 +437,7 @@ button.focus{
 
 
 .panel > div {
-    height: 50%;
+    height: 45%;
     margin: 4px;
     padding: 10px;
   /* font-size: 30px; */
