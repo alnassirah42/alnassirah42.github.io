@@ -792,17 +792,15 @@ makeplot();
 // to fix window resizing 
 //
 $(window).resize(function(){
-    if (panel_index == 1){
+
+    divs = ["lineChart","pieChart","tableDiv","summaryDiv","barChart","sankeyChart"]
+
+    for(i=0; i<divs.length; i++){
         var update = {
-            width: $("#tableDiv").width(),
-            height: $("#tableDiv").height(),
+            width: $(`#${divs[i]}`).width(),
+            height: $(`#${divs[i]}`).height(),
         }
-        Plotly.relayout("tableDiv",update)
-        var update = {
-            width: $("#summaryDiv").width(),
-            height: $("#summaryDiv").height(),
-        }
-        Plotly.relayout("summaryDiv",update)
+        Plotly.relayout(`#${divs[i]}`,update)
     }
 });
 
