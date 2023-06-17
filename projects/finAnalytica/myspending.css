@@ -347,10 +347,10 @@ main {
 
 .grid-container {
     width: 100%;
-    height: 20%;
+    height: 23%;
     margin: 5px 0 5px 0 ;
     display: grid;
-    grid-template-columns: 1.1fr 1.9fr;
+    grid-template-columns: 1fr 2fr;
     background-color: var(--clr-bg-alt);
     border-radius: 10px;
     }
@@ -371,7 +371,7 @@ main {
 
 .tab-container {
     width: 100%;
-    height: 80%;
+    height: 77%;
     /* margin: 30px; */
     /* gap: 10px; */
     display: block;
@@ -401,14 +401,20 @@ main {
     color: #fff;
     /* font-family: inherent; */
     font-size: 12px;
+}
 
-}
-button:hover{
+/* button:hover{ */
+/*     background-color:var(--clr-primary); */
+/* } */
+/* button:focus{ */
+/*     background-color:var(--clr-primary); */
+/* } */
+
+button.focus{
     background-color:var(--clr-primary);
 }
-button:focus{
-    background-color:var(--clr-primary);
-}
+
+
  .panel {
      height: 85%;
      font-size: 30px;
@@ -428,6 +434,8 @@ button:focus{
      box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 
 }
+
+
 .panel > div {
     height: 50%;
     margin: 4px;
@@ -443,7 +451,26 @@ button:focus{
 
   /* background-color: #CCCCCC; */
 }
+#filter-tab{
+    height:4%; 
+    display: flex;
+    align-items: center;
+}
+#filter-tab > *{
+    margin: 5px;
+}
 
+#filter-input{
+    padding: 4px 6px;
+    margin: 1px;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none;
+    outline: none;
+    background-color: #90a0d9;
+    border-radius: 5px;
+    color: #000;
+}
 /* .grid-container > div{ */
 /*   font-size: 30px; */
 /*   /* border: solid 1px black; */ */
@@ -478,7 +505,7 @@ button:focus{
       color: #fff;
       box-shadow: var(--shadow);
  }
- .button:focus{
-    background-color:lightblue
- }
+ /* .button:focus{ */
+ /*    background-color:lightblue */
+ /* } */
 
