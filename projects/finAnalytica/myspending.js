@@ -132,14 +132,15 @@ function writeSummary(){
 
     flow_p = $("#flow > .summary")
     total_income = -d3.sum(d3.filter(df_month,d=>d.amount<0),d=>d.amount)
+    total_spent = d3.sum(d3.filter(df_month,d=>d.amount>0),d=>d.amount)
+    total_saved = total_income - total_spent;
+
     total_income = total_income.toFixed(2);
     total_income = parseFloat(total_income).toLocaleString();
     
-    total_spent = d3.sum(d3.filter(df_month,d=>d.amount>0),d=>d.amount)
     total_spent = total_spent.toFixed(2);
     total_spent = parseFloat(total_spent).toLocaleString();
 
-    total_saved = total_income - total_spent;
     total_saved = total_saved.toFixed(2);
     total_saved = parseFloat(total_saved).toLocaleString();
     // total_transactions = d3.sum(d3.filter(df_month,d=>d.transaction_type!="salary"),d=>1)
