@@ -31,8 +31,9 @@ function showPanel(p_index){
         node.style.display="none";
     });
     tabButtons[panel_index].setAttribute("class","focus");
-    tabPanels[panel_index].style.display= "block"
+    tabPanels[panel_index].style.display= "block";
     // tabPanels[panel_index].style.backgroundColor= "#eee"
+    redrawCharts();
 }
 
 
@@ -840,8 +841,8 @@ function filterTable(){
 makeplot();
 
 // to fix window resizing 
-//
-$(window).resize(function(){
+
+function redrawCharts(){
 
     divs = ["lineChart","pieChart","tableDiv","summaryDiv","barChart","sankeyChart"]
 
@@ -852,7 +853,8 @@ $(window).resize(function(){
         }
         Plotly.relayout(`${divs[i]}`,update)
     }
-});
+}
+$(window).resize(redrawCharts);
 
 
 document.addEventListener('touchstart', handleTouchStart, false);        
