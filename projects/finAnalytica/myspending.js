@@ -31,8 +31,9 @@ function showPanel(p_index){
         node.style.display="none";
     });
     tabButtons[panel_index].setAttribute("class","focus");
-    tabPanels[panel_index].style.display= "block"
+    tabPanels[panel_index].style.display= "block";
     // tabPanels[panel_index].style.backgroundColor= "#eee"
+    redrawCharts();
 }
 
 
@@ -132,14 +133,15 @@ function writeSummary(){
 
     flow_p = $("#flow > .summary")
     total_income = -d3.sum(d3.filter(df_month,d=>d.amount<0),d=>d.amount)
+    total_spent = d3.sum(d3.filter(df_month,d=>d.amount>0),d=>d.amount)
+    total_saved = total_income - total_spent;
+
     total_income = total_income.toFixed(2);
     total_income = parseFloat(total_income).toLocaleString();
     
-    total_spent = d3.sum(d3.filter(df_month,d=>d.amount>0),d=>d.amount)
     total_spent = total_spent.toFixed(2);
     total_spent = parseFloat(total_spent).toLocaleString();
 
-    total_saved = total_income - total_spent;
     total_saved = total_saved.toFixed(2);
     total_saved = parseFloat(total_saved).toLocaleString();
     // total_transactions = d3.sum(d3.filter(df_month,d=>d.transaction_type!="salary"),d=>1)
@@ -839,8 +841,8 @@ function filterTable(){
 makeplot();
 
 // to fix window resizing 
-//
-$(window).resize(function(){
+
+function redrawCharts(){
 
     divs = ["lineChart","pieChart","tableDiv","summaryDiv","barChart","sankeyChart"]
 
@@ -851,7 +853,8 @@ $(window).resize(function(){
         }
         Plotly.relayout(`${divs[i]}`,update)
     }
-});
+}
+$(window).resize(redrawCharts);
 
 
 document.addEventListener('touchstart', handleTouchStart, false);        
