@@ -114,26 +114,34 @@ function writeSummary(){
     monthly_p = $("#monthly-overview > .summary")
 
     max_amount_in_a_day = d3.sort(df,(a,b)=>d3.descending(a.amount,b.amount))
-    max_amount_in_a_day = max_amount_in_a_day[0].amount.toFixed(2)
-
+    max_amount_in_a_day = max_amount_in_a_day[0].amount.toFixed(2);
+    max_amount_in_a_day = parseFloat(max_amount_in_a_day).toLocaleString();
     monthly_p.text(`maximum amount spent in a day is ${max_amount_in_a_day}`)
 
 
     table_p = $("#tables > .summary")
-    total_spent = d3.sum(d3.filter(df_month,d=>d.transaction_type!="salary"),d=>d.amount)
-    total_spent = total_spent.toFixed(2)
-    total_transactions = d3.sum(d3.filter(df_month,d=>d.transaction_type!="salary"),d=>1)
+    
+    total_spent = d3.sum(d3.filter(df_month,d=>d.transaction_type!="salary"),d=>d.amount);
+    total_spent = total_spent.toFixed(2);
+    total_spent = parseFloat(total_spent).toLocaleString();
+
+    total_transactions = d3.sum(d3.filter(df_month,d=>d.transaction_type!="salary"),d=>1);
+    total_transactions = parseFloat(total_transactions).toLocaleString();
+
     table_p.text(`spent ${total_spent} in ${total_transactions} transactions`)
 
     flow_p = $("#flow > .summary")
     total_income = -d3.sum(d3.filter(df_month,d=>d.amount<0),d=>d.amount)
-    total_income = total_income.toFixed(2)
+    total_income = total_income.toFixed(2);
+    total_income = parseFloat(total_income).toLocaleString();
     
     total_spent = d3.sum(d3.filter(df_month,d=>d.amount>0),d=>d.amount)
-    total_spent = total_spent.toFixed(2)
+    total_spent = total_spent.toFixed(2);
+    total_spent = parseFloat(total_spent).toLocaleString();
 
     total_saved = total_income - total_spent;
-    total_saved = total_saved.toFixed(2)
+    total_saved = total_saved.toFixed(2);
+    total_saved = parseFloat(total_saved).toLocaleString();
     // total_transactions = d3.sum(d3.filter(df_month,d=>d.transaction_type!="salary"),d=>1)
 
     flow_p.text(`total incoming ${total_income} total spent ${total_spent} total saved ${total_saved}`)
@@ -319,9 +327,9 @@ var data = [{
   type: 'table',
   header: {
     values: [["<b>date</b>"], ["<b>description</b>"],
-			 ["<b>category</b>"], ["<b>transaction_type</b>"], 
-             ["<b>amount</b>"],["<b>running sum</b>"]],
-    align: "left",
+			 ["<b>category</b>"], ["<b>txn. type</b>"], 
+             ["<b>amount</b>"],["<b>total</b>"]],
+    align: "center",
     line: {width: 1, color: 'white'},
     fill: {color: "#90a0d9"},
     font: {family: "Arial", size: 10, color: "black"}
@@ -338,6 +346,7 @@ var data = [{
       fill : {color : '#23283f',},
     
   },
+    columnwidth : [1,1.2,1,1.2,0.8,0.8],
     customdata: [df.map(d=>d['description'])],
     hoverinfo: "{customdata[0]}",   
 }]
@@ -738,13 +747,20 @@ function makeCreditDebitButtons(){
     credit_debit.append('select')
         .attr('class','credit-debit-s')
         .selectAll(".crdb")
-        .data(['all','credit','debit'])
+        .data(['credit/debit','all','credit','debit'])
         .enter()
         .append('option')
         .attr('id','txn-type')
         .attr('class','txn-type')
         .attr('value',d=>d)
         .text(d=>d)
+        .each(function(d) {
+            if (d === "credit/debit") {
+                d3.select(this).property("disabled", true)
+                d3.select(this).style("display", "none")
+            }
+        });
+
 
         d3.select(".credit-debit-s")
           .on('change',selectCreditDebit)
@@ -833,7 +849,7 @@ $(window).resize(function(){
             width: $(`#${divs[i]}`).width(),
             height: $(`#${divs[i]}`).height(),
         }
-        Plotly.relayout(`#${divs[i]}`,update)
+        Plotly.relayout(`${divs[i]}`,update)
     }
 });
 
