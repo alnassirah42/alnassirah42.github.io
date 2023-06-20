@@ -3,7 +3,13 @@
 var tabButtons = document.querySelectorAll(".tab-container .tab-buttons button")
 var tabPanels = document.querySelectorAll(".tab-container .panel")
 
-var panel_index = 0
+var panel_index = sessionStorage.getItem("panel_index");
+
+if(!panel_index){
+    panel_index = 0;
+}
+
+console.log(panel_index)
 function showAllPanel(){
     tabButtons.forEach(function(node){
         node.style.backgroundColor="";
@@ -23,6 +29,7 @@ $("#filter-input").on("keyup",filterTable)
 function showPanel(p_index){
     panel_index = p_index;
     
+    sessionStorage.setItem("panel_index",p_index)
     tabButtons.forEach(function(node){
         node.classList.remove("focus");
     });
