@@ -9,7 +9,6 @@ if(!panel_index){
     panel_index = 0;
 }
 
-console.log(panel_index)
 function showAllPanel(){
     tabButtons.forEach(function(node){
         node.style.backgroundColor="";
@@ -61,15 +60,21 @@ var sort = 'chronological'
 var sort_d = {'chronological':'date',
               'descending': 'amount'}
 
+
+var date_t = "2022-01"; 
 function makeplot() {
   Plotly.d3.csv("myspending.csv", 
       function(d){
-          amount = Math.random()*400;
-          if (d['transaction type'] == 'salary'){
-            amount = -60*amount;
-          }
-          if (d['transaction type'] == 'stcpay credit'){
-            amount = -amount;
+          // amount = Math.random()*400;
+          // if (d['transaction type'] == 'salary'){
+          //   amount = -60*amount;
+          // }
+          // if (d['transaction type'] == 'stcpay credit'){
+          //   amount = -amount;
+          // }
+          amount = +d.amount;
+          if ( date_t < d.date){
+            date_t  = d.date;
           }
           return {
             date: d.date,
@@ -321,59 +326,63 @@ function makeTable(df,sort){
     }else{
     df = d3.sort(df,(a,b)=>d3.descending(a[sort_d[sort]],b[sort_d[sort]]))
     }
-    const top10 = (d)=> d.length < 10 ? d: d.slice(0,10)+'...'
+    const topN = (d)=> d.length < 30 ? d: d.slice(0,30)+'...'
 
     var values = [
         df.map(d=>d['date']),
-        df.map(d=>top10(d['description'])),
+        df.map(d=>topN(d['description'])),
         df.map(d=>d['category_n']),
         df.map(d=>d['transaction_type']),
         df.map(d=>d['amount'].toFixed(2)),
         df.map(d=>d['cumulative_sum'].toFixed(2)),
     ]
 
-var data = [{
-  type: 'table',
-  header: {
-    values: [["<b>date</b>"], ["<b>description</b>"],
-			 ["<b>category</b>"], ["<b>txn. type</b>"], 
-             ["<b>amount</b>"],["<b>total</b>"]],
-    align: "center",
-    line: {width: 1, color: 'white'},
-    fill: {color: "#90a0d9"},
-    font: {family: "Arial", size: 10, color: "black"}
-  },
-  cells: {
-      values: values,
-      align: "left",
-      line: {color: "white", width: 1},
-      font: {family: "Arial", size: 8, color: ["white"]},
-      height: 20,
-      margin:{
-          l:0,
-      },
-      fill : {color : '#23283f',},
-    
-  },
-    columnwidth : [1,1.2,1,1.2,0.8,0.8],
-    customdata: [df.map(d=>d['description'])],
-    hoverinfo: "{customdata[0]}",   
-}]
- style_table={
-     hoverlabel: { bgcolor: "salmon" },
-     'overflowY': 'scroll',
-     margin: {
-        l: 1,
-        r: 1,
-        b: 1,
-        t: 1,
-    },
-    paper_bgcolor : '#23283e',
-    plot_bgcolor : '#23283e',
+    tableDiv_height = $("#tableDiv").height()
 
- },
-Plotly.newPlot('tableDiv', data,style_table);
-};
+    font_size = Array(6).fill(tableDiv_height/15)
+    font_size[1] =tableDiv_height/20;
+    var data = [{
+      type: 'table',
+      header: {
+        values: [["<b>date</b>"], ["<b>description</b>"],
+                 ["<b>category</b>"], ["<b>txn. type</b>"], 
+                 ["<b>amount</b>"],["<b>total</b>"]],
+        align: "center",
+        line: {width: 1, color: 'white'},
+        fill: {color: "#90a0d9"},
+        font: {family: "Arial", size: tableDiv_height/15, color: "black"}
+      },
+      cells: {
+          values: values,
+          align: "left",
+          line: {color: "white", width: 1},
+          font: {family: "Arial", size: font_size, color: ["white"]},
+          height: tableDiv_height/10,
+          margin:{
+              l:0,
+          },
+          fill : {color : '#23283f',},
+        
+      },
+        columnwidth : [1,1.2,1,1.2,0.8,0.8],
+        customdata: [df.map(d=>d['description'])],
+        hoverinfo: "{customdata[0]}",   
+    }]
+     style_table={
+         hoverlabel: { bgcolor: "salmon" },
+         'overflowY': 'scroll',
+         margin: {
+            l: 1,
+            r: 1,
+            b: 1,
+            t: 1,
+        },
+        paper_bgcolor : '#23283e',
+        plot_bgcolor : '#23283e',
+
+     },
+    Plotly.newPlot('tableDiv', data,style_table);
+    };
 
 function makeRadar(df){
     df_radar = d3.flatRollup(df_month,
@@ -506,7 +515,8 @@ function makeSummary(df){
         summary[i]['transactions'] = summary_num[i]['amount']
         summary[i]['avg. ticket'] = summary[i]['amount']/summary[i]['transactions']
     }
-    sum = d3.sum(d3.filter(summary,d=>d.category !='salary').map(d=>d.amount))
+    sum = d3.sum(d3.filter(summary,d=>d.amount >0).map(d=>d.amount))
+    // sum = d3.sum(d3.filter(summary,d=>d.category !='salary').map(d=>d.amount))
     txn_sum = d3.sum(summary.map(d=>d.transactions))
 
     summary.push({category_n:'total',
@@ -523,44 +533,45 @@ function makeSummary(df){
         summary.map(d=>((+d['amount'])/sum*100).toFixed(2) + '%'),
     ]
 
-var data = [{
-  type: 'table',
-  header: {
-    values: [["<b>category</b>"],
-             ["<b>amount</b>"],
-             ["<b>transactions</b>"],
-             ["<b>average</b>"],
-             ["<b>pct</b>"],
-            ],
-    align: "left",
-    line: {width: 1, color: 'white'},
-    fill: {color: "#90a0d9"},
-    font: {family: "Arial", size: 10, color: "black"},
-    height: 15,
-  },
-  cells: {
-    values: values,
-    align: "left",
-    line: {color: "white", width: 1},
-    font: {family: "Arial", size: 10, color: ["white"]},
-    height: 20,
-    fill : {color : '#23283f',},
-  }
-}]
- style_table={
-     'overflowY': 'scroll',
-     margin: {
-        l: 1,
-        r: 1,
-        b: 1,
-        t: 1
-    },
-    paper_bgcolor : '#23283e',
-    plot_bgcolor : '#23283e',
- },
-Plotly.newPlot('summaryDiv', data,style_table);
+    summaryDiv_height = $("#summaryDiv").height()
+    var data = [{
+      type: 'table',
+      header: {
+        values: [["<b>category</b>"],
+                 ["<b>amount</b>"],
+                 ["<b>transactions</b>"],
+                 ["<b>average</b>"],
+                 ["<b>pct</b>"],
+                ],
+        align: "left",
+        line: {width: 1, color: 'white'},
+        fill: {color: "#90a0d9"},
+        font: {family: "Arial", size: summaryDiv_height/15, color: "black"},
+        height: 15,
+      },
+      cells: {
+        values: values,
+        align: "left",
+        line: {color: "white", width: 1},
+        font: {family: "Arial", size: summaryDiv_height/15, color: ["white"]},
+        height: summaryDiv_height/10,
+        fill : {color : '#23283f',},
+      }
+    }]
+     style_table={
+         'overflowY': 'scroll',
+         margin: {
+            l: 1,
+            r: 1,
+            b: 1,
+            t: 1
+        },
+        paper_bgcolor : '#23283e',
+        plot_bgcolor : '#23283e',
+     },
+    Plotly.newPlot('summaryDiv', data,style_table);
 
-}
+    }
 
 function sankeyChart(df){
     
