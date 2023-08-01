@@ -22,9 +22,6 @@ function showAllPanel(){
 }
 $("#filter-input").on("keyup",filterTable)
 
-
-
-
 function showPanel(p_index){
     panel_index = p_index;
     
@@ -65,13 +62,13 @@ var date_t = "2022-01";
 function makeplot() {
   Plotly.d3.csv("myspending.csv", 
       function(d){
-          // amount = Math.random()*400;
-          // if (d['transaction type'] == 'salary'){
-          //   amount = -60*amount;
-          // }
-          // if (d['transaction type'] == 'stcpay credit'){
-          //   amount = -amount;
-          // }
+          amount = Math.random()*400;
+          if (d['transaction type'] == 'salary'){
+            amount = -60*amount;
+          }
+          if (d['transaction type'] == 'stcpay credit'){
+            amount = -amount;
+          }
           amount = +d.amount;
           if ( date_t < d.date){
             date_t  = d.date;
