@@ -341,6 +341,7 @@ function makeTable(df,sort){
 
     font_size = Array(6).fill(tableDiv_height/15)
     font_size[1] =tableDiv_height/20;
+    // font_size = 12; 
     var data = [{
       type: 'table',
       header: {
@@ -534,6 +535,8 @@ function makeSummary(df){
     ]
 
     summaryDiv_height = $("#summaryDiv").height()
+    fontsize = summaryDiv_height/18
+    // fontsize = 15;
     var data = [{
       type: 'table',
       header: {
@@ -546,15 +549,15 @@ function makeSummary(df){
         align: "left",
         line: {width: 1, color: 'white'},
         fill: {color: "#90a0d9"},
-        font: {family: "Arial", size: summaryDiv_height/15, color: "black"},
+        font: {family: "Arial", size: 12, color: "black"},
         height: 15,
       },
       cells: {
         values: values,
         align: "left",
         line: {color: "white", width: 1},
-        font: {family: "Arial", size: summaryDiv_height/15, color: ["white"]},
-        height: summaryDiv_height/10,
+        font: {family: "Arial", size: fontsize, color: ["white"]},
+        height: summaryDiv_height/11,
         fill : {color : '#23283f',},
       }
     }]
@@ -873,6 +876,7 @@ function redrawCharts(){
     }
 }
 $(window).resize(redrawCharts);
+$("div").resize(redrawCharts);
 
 
 document.addEventListener('touchstart', handleTouchStart, false);        
@@ -903,11 +907,11 @@ function handleTouchMove(evt) {
     var xDiff = xDown - xUp;
     var yDiff = yDown - yUp;
                                                                          
-    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-        if ( xDiff > 0 ) {
+    if ( Math.abs( xDiff ) > Math.abs( yDiff )) {/*most significant*/
+        if ( xDiff > 8 ) {
             panel_index = Math.min(2,panel_index+1)
             showPanel(panel_index)
-        } else {
+        } else if (xDiff < -8) {
             panel_index = Math.max(0,panel_index-1)
             showPanel(panel_index)
         }                       
