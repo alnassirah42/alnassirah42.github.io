@@ -62,13 +62,13 @@ var date_t = "2022-01";
 function makeplot() {
   Plotly.d3.csv("myspending.csv", 
       function(d){
-          amount = Math.random()*400;
-          if (d['transaction type'] == 'salary'){
-            amount = -60*amount;
-          }
-          if (d['transaction type'] == 'stcpay credit'){
-            amount = -amount;
-          }
+          // amount = Math.random()*400;
+          // if (d['transaction type'] == 'salary'){
+          //   amount = -60*amount;
+          // }
+          // if (d['transaction type'] == 'stcpay credit'){
+          //   amount = -amount;
+          // }
           amount = +d.amount;
           if ( date_t < d.date){
             date_t  = d.date;
@@ -336,7 +336,7 @@ function makeTable(df,sort){
 
     tableDiv_height = $("#tableDiv").height()
 
-    font_size = Array(6).fill(tableDiv_height/15)
+    font_size = Array(6).fill(tableDiv_height/20)
     font_size[1] =tableDiv_height/20;
     // font_size = 12; 
     var data = [{
@@ -348,21 +348,21 @@ function makeTable(df,sort){
         align: "center",
         line: {width: 1, color: 'white'},
         fill: {color: "#90a0d9"},
-        font: {family: "Arial", size: tableDiv_height/15, color: "black"}
+        font: {family: "Arial", size: 10, color: "black"}
       },
       cells: {
           values: values,
           align: "left",
           line: {color: "white", width: 1},
-          font: {family: "Arial", size: font_size, color: ["white"]},
-          height: tableDiv_height/10,
+          font: {family: "Arial", size: 8, color: ["white"]},
+          height: 8,//tableDiv_height,
           margin:{
               l:0,
           },
           fill : {color : '#23283f',},
         
       },
-        columnwidth : [1,1.2,1,1.2,0.8,0.8],
+        columnwidth : [1.2,1.2,1,1.2,0.8,0.8],
         customdata: [df.map(d=>d['description'])],
         hoverinfo: "{customdata[0]}",   
     }]
@@ -546,16 +546,16 @@ function makeSummary(df){
         align: "left",
         line: {width: 1, color: 'white'},
         fill: {color: "#90a0d9"},
-        font: {family: "Arial", size: 12, color: "black"},
-        height: 15,
+        font: {family: "Arial", size: 10, color: "black"},
+        height: 12,
       },
       cells: {
         values: values,
         align: "left",
         line: {color: "white", width: 1},
-        font: {family: "Arial", size: fontsize, color: ["white"]},
-        height: summaryDiv_height/11,
-        fill : {color : '#23283f',},
+        font: {family: "Arial", size: 8, color: ["white"]},
+        height: 18,//summaryDiv_height/11,
+        fill : {color : '#23283a',},
       }
     }]
      style_table={
