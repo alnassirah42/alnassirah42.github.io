@@ -162,7 +162,8 @@ function writeSummary(){
 function processData(YM,category,credit,sort) {
     showAllPanel()
     // dft = data
-    df_month_wsal = dft 
+    df_month_wsal = dft;
+    dft_category = dft;
     if (YM !='all'){
         s_year = YM.split('-')[0]
         s_month = YM.split('-')[1]
@@ -173,13 +174,16 @@ function processData(YM,category,credit,sort) {
             df_month_wsal = d3.filter(df_month_wsal,d=>d.YM.split('-')[1] == s_month)
         }
     }
+
     df_month = df_month_wsal//d3.filter(df_month_wsal,d=>d["transaction_type"] != 'salary')  
     if (category !='all'){
         df_month = d3.filter(df_month,d=>d["category_n"] == category)  
+        dft_category = d3.filter(dft_category,d=>d["category_n"] == category);
     }
 
     if (credit !='all'){
         df_month = d3.filter(df_month,d=>credit_d[credit]*d.amount > 0)  
+        dft_category = d3.filter(dft_category,d=>credit_d[credit]*d.amount > 0); 
     }
 
     cumsum = 0;
@@ -192,10 +196,6 @@ function processData(YM,category,credit,sort) {
     layout = {
 
         margin: {
-            // l: 100,
-            // r: 10,
-            // b: 40,
-            // t: 10,
             l: 5,
             r: 35,
             b: 80,
@@ -218,10 +218,12 @@ function processData(YM,category,credit,sort) {
         row = df[i];
         cumsum += row['amount']
         x.push( row['date'] );
-        y.push(cumsum );
+        y.push(cumsum);
+        // y.push(row['amount']);
     }
 
-    plotLine( x, y,"lineChart",YM);
+    title = 'spending over '+ YM,
+    plotLine( x, y,"lineChart",title);
     
     // pie chart 
     f = v=>d3.sum(v,d=>d[value])
@@ -234,7 +236,27 @@ function processData(YM,category,credit,sort) {
         },
         type   : 'pie'
     }]
-    Plotly.newPlot('pieChart',pie_data,layout)
+     // Plotly.newPlot('pieChart',pie_data,layout)
+
+    // monthly line chart 
+    dft_monthly = prepareData(dft_category,
+                              key='YM',
+                              value='amount',
+                              v=>d3.sum(v,d=>d[value]),
+                              category_colors)
+    
+    var x = [], y = [];
+    var cumsum = 0; 
+    for (var i=0; i<dft_monthly.length; i++) {
+        
+        row = dft_monthly[i];
+        cumsum += row['amount']
+        x.push( row['YM'] );
+        // y.push(cumsum);
+        y.push(row['amount']);
+    } 
+    console.log(x,y,row)
+    plotLine( x, y,"monthly-chart",`monthly spending of ${category}`);
 
     // bar chart
     f = v=>d3.sum(v,d=>d[value])
@@ -249,9 +271,9 @@ function processData(YM,category,credit,sort) {
     writeSummary()
 }
 
-function plotLine(x, y, id,YM){
+function plotLine(x, y, id,title){
     var layout = {
-        title: 'spending over '+ YM,
+        title: title,
         margin: {
             l: 40,
             r: 30,
@@ -306,6 +328,9 @@ function plotLine(x, y, id,YM){
 
 };
 function prepareData(df,key,value,f,color_scheme){
+    /*
+     * takes in dataframe (df) key and value--> groups by key and aggregates by f 
+     */
     dfg = d3.rollup(df,f,d=>d[key])
     dfg = [...dfg].map(function(d){return {[key]:d[0],[value]:d[1]}})
     dfg = [...dfg].map(function(d){
@@ -452,6 +477,7 @@ function makeRadar(df){
 }
 function makeBar(df){
 
+    
     df_bar = prepareData(df,key='transaction_type',value='amount',f,txn_types_colors)
     df_bar = d3.map(df_bar,function(d){
         return {
@@ -479,7 +505,7 @@ function makeBar(df){
     layout = {margin: {
         l: 30,
         r: 10,
-        b: 40,
+        b: 20,
         t: 10,
     },
         font: {
@@ -862,7 +888,13 @@ makeplot();
 
 function redrawCharts(){
 
-    divs = ["lineChart","pieChart","tableDiv","summaryDiv","barChart","sankeyChart"]
+    divs = ["lineChart",
+            // "pieChart",
+            "monthly-chart",
+            "tableDiv",
+            "summaryDiv",
+            "barChart",
+            "sankeyChart"]
 
     for(i=0; i<divs.length; i++){
         var update = {
