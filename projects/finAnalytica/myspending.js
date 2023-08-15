@@ -255,7 +255,6 @@ function processData(YM,category,credit,sort) {
         // y.push(cumsum);
         y.push(row['amount']);
     } 
-    console.log(x,y,row)
     plotLine( x, y,"monthly-chart",`monthly spending of ${category}`);
 
     // bar chart
@@ -359,11 +358,11 @@ function makeTable(df,sort){
         df.map(d=>d['cumulative_sum'].toFixed(2)),
     ]
 
-    tableDiv_height = $("#tableDiv").height()
+    tableDiv_height = $("#tableDiv").height()/10
 
-    font_size = Array(6).fill(tableDiv_height/20)
-    font_size[1] =tableDiv_height/20;
-    // font_size = 12; 
+    font_size = Array(6).fill(tableDiv_height/2)
+    font_size[1] =tableDiv_height/3;
+    // font_size = 11; 
     var data = [{
       type: 'table',
       header: {
@@ -373,14 +372,14 @@ function makeTable(df,sort){
         align: "center",
         line: {width: 1, color: 'white'},
         fill: {color: "#90a0d9"},
-        font: {family: "Arial", size: 10, color: "black"}
+        font: {family: "Arial", size: font_size, color: "black"}
       },
       cells: {
           values: values,
           align: "left",
           line: {color: "white", width: 1},
-          font: {family: "Arial", size: 8, color: ["white"]},
-          height: 8,//tableDiv_height,
+          font: {family: "Arial", size: font_size, color: ["white"]},
+          height: tableDiv_height,
           margin:{
               l:0,
           },
@@ -579,8 +578,8 @@ function makeSummary(df){
         values: values,
         align: "left",
         line: {color: "white", width: 1},
-        font: {family: "Arial", size: 8, color: ["white"]},
-        height: 18,//summaryDiv_height/11,
+        font: {family: "Arial", size: fontsize, color: ["white"]},
+        // height: summaryDiv_height/11,
         fill : {color : '#23283a',},
       }
     }]
