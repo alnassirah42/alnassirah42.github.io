@@ -4,6 +4,7 @@ var tabButtons = document.querySelectorAll(".tab-container .tab-buttons button")
 var tabPanels = document.querySelectorAll(".tab-container .panel")
 
 var panel_index = sessionStorage.getItem("panel_index");
+var get_prev_month = false;
 
 if(!panel_index){
     panel_index = 0;
@@ -163,27 +164,48 @@ function processData(YM,category,credit,sort) {
     showAllPanel()
     // dft = data
     df_month_wsal = dft;
+    df_prev_month = dft;
     dft_category = dft;
+    get_prev_month = (YM !='all') && (YM !='2021-01')
+
     if (YM !='all'){
         s_year = YM.split('-')[0]
         s_month = YM.split('-')[1]
         if (s_year !='all'){
             df_month_wsal = d3.filter(dft,d=>d.YM.split('-')[0] == s_year)
+            if (get_prev_month){
+                df_prev_month = d3.filter(dft,d=>d.YM.split('-')[0] == s_year)
+            }
         }
         if (s_month !='all'){
             df_month_wsal = d3.filter(df_month_wsal,d=>d.YM.split('-')[1] == s_month)
+            if (get_prev_month){
+                prev_month = ((+s_month) - 1)
+                f = (s) => s > 9 ? s.toString() : '0' + s.toString()
+                df_prev_month = d3.filter(df_prev_month,d=>d.YM.split('-')[1] == f(prev_month))
+            }
         }
     }
 
     df_month = df_month_wsal//d3.filter(df_month_wsal,d=>d["transaction_type"] != 'salary')  
+
     if (category !='all'){
         df_month = d3.filter(df_month,d=>d["category_n"] == category)  
         dft_category = d3.filter(dft_category,d=>d["category_n"] == category);
+        
+        if (get_prev_month){
+                df_prev_month = d3.filter(df_prev_month,d=>d["category_n"] == category);
+            }
     }
 
     if (credit !='all'){
         df_month = d3.filter(df_month,d=>credit_d[credit]*d.amount > 0)  
         dft_category = d3.filter(dft_category,d=>credit_d[credit]*d.amount > 0); 
+        
+        if (get_prev_month){
+                df_prev_month = d3.filter(df_prev_month,d=>credit_d[credit]*d.amount > 0);
+            }
+
     }
 
     cumsum = 0;
@@ -193,8 +215,18 @@ function processData(YM,category,credit,sort) {
     }
     df = d3.rollup(df_month,v=>d3.sum(v,d=>d.amount),d=>d.date)
     df = [...df].map(function(d){return {date:d[0],amount:d[1]}})
-    layout = {
 
+
+    cumsum_prev = 0; 
+    for(i=0;i<df_prev_month.length;i++){
+        cumsum_prev += df_prev_month[i]['amount']
+        df_prev_month[i]['cumulative_sum'] = cumsum
+    }
+    df_prev = d3.rollup(df_prev_month,v=>d3.sum(v,d=>d.amount),d=>d.date)
+    df_prev = [...df_prev].map(function(d){return {date:d[0],amount:d[1]}})
+
+
+    layout = {
         margin: {
             l: 5,
             r: 35,
@@ -224,7 +256,22 @@ function processData(YM,category,credit,sort) {
 
     title = 'spending over '+ YM,
     plotLine( x, y,"lineChart",title);
+     
+    var x = [], y = [];
+    var cumsum = 0; 
+    for (var i=0; i<df_prev_month.length; i++) {
+        
+        row = df_prev_month[i];
+        cumsum += row['amount']
+        x.push( row['date'] );
+        y.push(cumsum);
+        // y.push(row['amount']);
+    }
+
+    title = 'spending over prev month '+ YM,
+    plotLine( x, y,"lineChart",title);
     
+
     // pie chart 
     f = v=>d3.sum(v,d=>d[value])
     df_pie = prepareData(df_month,key='category_n',value='amount',f,category_colors)
