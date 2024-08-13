@@ -408,7 +408,7 @@ function makeTable(df,sort){
     tableDiv_height = $("#tableDiv").height()/10
 
     font_size = Array(6).fill(tableDiv_height/2)
-    font_size[1] =tableDiv_height/3;
+    // font_size[1] =tableDiv_height/3;
     // font_size = 11; 
     var data = [{
       type: 'table',
@@ -433,7 +433,7 @@ function makeTable(df,sort){
           fill : {color : '#23283f',},
         
       },
-        columnwidth : [1.2,1.2,1,1.2,0.8,0.8],
+        columnwidth : [0.7,1.5,1,1.2,0.8,0.8],
         customdata: [df.map(d=>d['description'])],
         hoverinfo: "{customdata[0]}",   
     }]
@@ -765,6 +765,7 @@ const sorts = d3.select("#sort-table")
 function makeYMButtons(yms) {
     years = [... new Set(d3.map(yms.slice(0,yms.length-1),d=>d.slice(0,4)))]
     years = [...['year','all'],...years]
+    console.log(years)
     months = [... new Set(d3.map(yms.slice(0,yms.length-1),d=>d.slice(5,7)))]
     months = d3.sort(months)
     months = [...['month','all'],...months]
